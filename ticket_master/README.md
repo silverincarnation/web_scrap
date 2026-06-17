@@ -1,43 +1,43 @@
-# Ticketmaster 活动下载器
+# Ticketmaster Event Downloader
 
-从 Ticketmaster Discovery API 拉取活动，按时间 / 地点 / 关键词筛选，导出成 CSV。
+Fetch events from the Ticketmaster Discovery API, filter them by time, location, or keyword, and export the results to a CSV file.
 
-## 怎么用
+## How to Use
 
-1. 打开 `run.py`，改里面的 `config` 字典（API key、时间、城市等）。
-2. 运行：
+1. Open `run.py` and edit the `config` dictionary, including the API key, time range, city, and other filters.
+2. Run:
 
 ```bash
 python run.py
 ```
 
-3. 结果写到 `config["out"]` 指定的 CSV 文件（默认 `events.csv`）。
+3. The results will be written to the CSV file specified by `config["out"]`. The default output file is `events.csv`.
 
-只用到 Python 标准库，不需要装任何额外包。
+This project uses only the Python standard library, so no additional packages are required.
 
-## config 各项说明
+## Configuration Options
 
-| 键 | 说明 | 是否必填 |
-|------|------|------|
-| `apikey` | Ticketmaster API key（[免费申请](https://developer.ticketmaster.com)） | 必填 |
-| `start_time` / `end_time` | 时间范围，UTC 格式 `2026-04-10T00:00:00Z` | 可选 |
-| `city` | 城市名 | 可选 |
-| `country_code` | 国家代码：US、GB、PK… | 可选 |
-| `keyword` | 关键词搜索 | 可选 |
-| `out` | 输出 CSV 文件名 | 可选，默认 `events.csv` |
-| `size` | 每页数量（最大 200） | 可选，默认 100 |
-| `max_pages` | 最多翻几页 | 可选，默认 5 |
+| Key | Description | Required |
+|------|-------------|----------|
+| `apikey` | Ticketmaster API key ([apply for a free key](https://developer.ticketmaster.com)) | Yes |
+| `start_time` / `end_time` | Time range in UTC format: `2026-04-10T00:00:00Z` | No |
+| `city` | City name | No |
+| `country_code` | Country code, such as `US`, `GB`, or `PK` | No |
+| `keyword` | Keyword used to search for events | No |
+| `out` | Output CSV filename | No, defaults to `events.csv` |
+| `size` | Number of events per page, up to 200 | No, defaults to 100 |
+| `max_pages` | Maximum number of result pages to fetch | No, defaults to 5 |
 
-不需要的项删掉或留空即可。
+Options that are not needed can be removed or left empty.
 
-## 两个文件
+## Project Files
 
-- `run.py` —— 你只需要改这里的 config，然后运行。
-- `ticketmaster_download.py` —— 实际逻辑：`download(config)` 负责拉取、转换、写 CSV。
+- `run.py` — Edit the `config` dictionary in this file, then run it.
+- `ticketmaster_download.py` — Contains the main logic. The `download(config)` function fetches events, transforms the data, and writes the results to a CSV file.
 
-## CSV 列
+## CSV Columns
 
-```
+```text
 name, description, location_name, latitude, longitude, address,
 start_time, end_time, city, primary_category, secondary_categories,
 thumbnail_image, additional_images, external_link, is_paid
