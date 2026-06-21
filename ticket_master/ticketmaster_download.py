@@ -44,7 +44,6 @@ def build_params(config, page):
 
 
 def fetch_json(url):
-    # 遇到 429（请求太频繁）就等一会儿再重试，最多试 5 次。
     for attempt in range(5):
         try:
             with urllib.request.urlopen(url, timeout=30) as resp:
@@ -52,7 +51,6 @@ def fetch_json(url):
         except urllib.error.HTTPError as e:
             if e.code == 429 and attempt < 4:
                 wait = 5 * (attempt + 1)
-                print(f"  被限流(429)，等 {wait} 秒后重试…")
                 time.sleep(wait)
                 continue
             raise
@@ -70,7 +68,7 @@ def fetch_events(config):
     while page < max_pages:
         url = API_URL + "?" + urllib.parse.urlencode(build_params(config, page))
         data = fetch_json(url)
-        time.sleep(0.25)  # 每次请求之间稍微停一下，避免限流
+        time.sleep(0.25)
         batch = get(data, "_embedded", "events", default=[])
         events.extend(batch)
 
