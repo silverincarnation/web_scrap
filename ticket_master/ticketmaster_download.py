@@ -109,7 +109,7 @@ def map_event(event):
         "thumbnail_image": thumbnail,
         "additional_images": additional,
         "external_link": event.get("url", ""),
-        "is_paid": "true" if event.get("priceRanges") else "false",
+        "is_paid": "true" if event.get("priceRanges") else "",
     }
 
 
