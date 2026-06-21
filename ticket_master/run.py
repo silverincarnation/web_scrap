@@ -57,7 +57,7 @@ def run_hourly(start_local, end_local):
     while current <= end:
         run_one_hour(current)
         current += timedelta(hours=1)
-        time.sleep(0.5)  # 每个小时之间停一下，避免限流
+        time.sleep(0.5)  
 
 
 if __name__ == "__main__":
