@@ -153,15 +153,19 @@ def map_event(event):
     offers = event.get("offers", {})
     if isinstance(offers, list):
         offers = offers[0] if offers else {}
-    price = ""
+    price = None
     if isinstance(offers, dict):
-        price = offers.get("price") or offers.get("lowPrice") or ""
-    is_paid = "false"
-    try:
-        if price not in ("", None) and float(price) > 0:
-            is_paid = "true"
-    except (TypeError, ValueError):
-        pass
+        if "price" in offers:
+            price = offers["price"]
+        elif "lowPrice" in offers:
+            price = offers["lowPrice"]
+    # No price info found -> leave blank (unknown). Only fill when we actually know.
+    is_paid = ""
+    if price is not None and str(price).strip() != "":
+        try:
+            is_paid = "true" if float(price) > 0 else "false"
+        except (TypeError, ValueError):
+            is_paid = ""
 
     return {
         "name": event.get("name", ""),
