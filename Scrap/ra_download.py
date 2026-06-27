@@ -67,17 +67,82 @@ def get(d, *keys, default=""):
     return d if d is not None else default
 
 
+AREAS_QUERY = """
+query GET_AREAS($searchTerm: String!, $limit: Int) {
+  areas(searchTerm: $searchTerm, limit: $limit) {
+    id
+    name
+    country { name }
+  }
+}
+"""
+
+# ISO country code -> RA country name, to disambiguate same-named cities
+# (e.g. Paris/FR vs Paris/US, London/GB vs London/CA). Unknown codes => no filter.
+_CC_TO_NAME = {
+    "US": "United States", "GB": "United Kingdom", "UK": "United Kingdom",
+    "DE": "Germany", "FR": "France", "JP": "Japan", "AU": "Australia",
+    "CA": "Canada", "ES": "Spain", "NL": "Netherlands", "IT": "Italy",
+    "BR": "Brazil", "MX": "Mexico", "AR": "Argentina", "BE": "Belgium",
+    "PT": "Portugal", "CH": "Switzerland", "AT": "Austria", "SE": "Sweden",
+    "NO": "Norway", "DK": "Denmark", "FI": "Finland", "IE": "Ireland",
+    "PL": "Poland", "GR": "Greece", "CO": "Colombia", "CL": "Chile",
+    "ZA": "South Africa", "KR": "South Korea", "SG": "Singapore",
+    "TH": "Thailand", "IN": "India", "NZ": "New Zealand", "TR": "Turkey",
+    "AE": "United Arab Emirates", "HK": "Hong Kong",
+}
+
+
+def _lookup_area_id(city, country_code=""):
+    """Resolve a city name to an RA area id via the public `areas` query."""
+    term = (city or "").strip()
+    if not term:
+        return None
+    try:
+        data = _post({"searchTerm": term, "limit": 5}, AREAS_QUERY)
+    except Exception as e:
+        print(f"  ra: area lookup failed for '{city}': {e}")
+        return None
+    areas = ((data or {}).get("data") or {}).get("areas") or []
+    if not areas:
+        return None
+    want = _CC_TO_NAME.get((country_code or "").strip().upper(), "").lower()
+
+    def score(a):
+        s = 0
+        if (a.get("name") or "").strip().lower() == term.lower():
+            s += 2
+        country = ((a.get("country") or {}).get("name") or "").strip().lower()
+        if want and country == want:
+            s += 2
+        return s
+
+    best = max(areas, key=score)
+    try:
+        area = int(str(best.get("id")).strip())
+    except (TypeError, ValueError):
+        return None
+    print(f"  ra: resolved '{city}' -> area {area} "
+          f"({best.get('name')}, {get(best, 'country', 'name')})")
+    return area
+
+
 def _area_id(config):
-    # explicit override via config["area_id"]/["place"], else the city map
+    # 1) explicit override via config["area_id"] / ["place"]
     for key in ("area_id", "place"):
         v = str(config.get(key) or "").strip()
         if v.isdigit():
             return int(v)
-    return AREA_IDS.get((config.get("city") or "").strip().lower())
+    # 2) fast path: built-in city map
+    mapped = AREA_IDS.get((config.get("city") or "").strip().lower())
+    if mapped:
+        return mapped
+    # 3) auto-lookup by city name via RA's `areas` query
+    return _lookup_area_id(config.get("city"), config.get("country_code"))
 
 
-def _post(variables):
-    body = json.dumps({"query": QUERY, "variables": variables}).encode("utf-8")
+def _post(variables, query=QUERY):
+    body = json.dumps({"query": query, "variables": variables}).encode("utf-8")
     req = urllib.request.Request(GQL_URL, data=body, headers=HEADERS)
     for attempt in range(5):
         try:
