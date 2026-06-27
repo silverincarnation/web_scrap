@@ -25,6 +25,26 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 RESULT_DIR = os.path.join(ROOT, "result")
 SUFFIX = "_download.py"
 
+# North American time zones offered in the UI dropdown.
+NA_TIMEZONES = [
+    "America/New_York", "America/Chicago", "America/Denver",
+    "America/Phoenix", "America/Los_Angeles", "America/Anchorage",
+    "Pacific/Honolulu", "America/Toronto", "America/Vancouver",
+    "America/Mexico_City",
+]
+NA_TZ_LABELS = {
+    "America/New_York": "Eastern — New York",
+    "America/Chicago": "Central — Chicago",
+    "America/Denver": "Mountain — Denver",
+    "America/Phoenix": "Mountain — Phoenix (no DST)",
+    "America/Los_Angeles": "Pacific — Los Angeles",
+    "America/Anchorage": "Alaska — Anchorage",
+    "Pacific/Honolulu": "Hawaii — Honolulu",
+    "America/Toronto": "Eastern — Toronto (CA)",
+    "America/Vancouver": "Pacific — Vancouver (CA)",
+    "America/Mexico_City": "Central — Mexico City (MX)",
+}
+
 # Find the sibling Scrap/ folder (case-insensitive fallback).
 SCRAP_DIR = next(
     (os.path.join(ROOT, n) for n in ("Scrap", "scrap", "scraping")
@@ -82,10 +102,10 @@ def location_folder(city, country):
     return f"{part}_{tail}" if tail else part
 
 
-def build_config(site, city, country, date, out):
+def build_config(site, city, country, date, out, tz_name="America/New_York"):
     try:
         from zoneinfo import ZoneInfo
-        tz = ZoneInfo("America/New_York")
+        tz = ZoneInfo(tz_name)
     except Exception:
         tz = datetime.timezone.utc
     d = datetime.date.fromisoformat(date)
@@ -127,9 +147,11 @@ if not scrapers:
 with st.form("scrape"):
     sites = st.multiselect("Websites", list(scrapers),
                            default=[s for s in ("eventbrite",) if s in scrapers])
-    c1, c2 = st.columns(2)
+    c1, c2, c3 = st.columns(3)
     city = c1.text_input("Location (city)", "New York")
     country = c2.text_input("Country code", "US", max_chars=2)
+    tz_name = c3.selectbox("Time zone", NA_TIMEZONES,
+                           format_func=lambda z: NA_TZ_LABELS.get(z, z))
     today = datetime.date.today()
     picked = st.date_input("Date (or range)", (today, today))
     go = st.form_submit_button("Scrape", type="primary")
@@ -162,7 +184,7 @@ if go:
             out = os.path.join(out_dir, f"{site}.csv")
             try:
                 rows = load_download(scrapers[site])(
-                    build_config(site, city, country, date, out))
+                    build_config(site, city, country, date, out, tz_name))
                 results.append({"Site": site, "Date": date,
                                 "Rows": len(rows or []), "Status": "ok",
                                 "File": os.path.relpath(out, ROOT)})
