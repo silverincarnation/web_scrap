@@ -1,0 +1,11 @@
+# Secrets — never commit
+.env
+
+# Downloaded event exports
+events.csv
+events_*.csv
+events_data/
+
+# Python
+__pycache__/
+*.pyc
