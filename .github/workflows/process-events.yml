@@ -1,0 +1,56 @@
+name: Process Events
+
+on:
+  push:
+    paths:
+      - 'Mexico_City_MX/**/*.csv'
+      - 'ny_input/**/*.csv'
+  workflow_dispatch:
+    inputs:
+      city:
+        description: 'City to process'
+        required: true
+        type: choice
+        options:
+          - mexico_city
+          - new_york
+          - both
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install timezonefinder pytz python-dateutil
+      
+      - name: Process Mexico City
+        if: github.event.inputs.city == 'mexico_city' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        run: |
+          python clean_mx_events.py output_mx.csv Mexico_City_MX
+      
+      - name: Process New York
+        if: github.event.inputs.city == 'new_york' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        run: |
+          python clean_ny_events.py output_ny.csv ny_input
+      
+      - name: Upload Mexico City output
+        if: github.event.inputs.city == 'mexico_city' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: mexico-city-events
+          path: output_mx.csv
+      
+      - name: Upload New York output
+        if: github.event.inputs.city == 'new_york' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-york-events
+          path: output_ny.csv
