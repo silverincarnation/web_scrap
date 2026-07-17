@@ -3,6 +3,7 @@ name: Process Events
 on:
   push:
     paths:
+      - '**/*.zip'
       - 'Mexico_City_MX/**/*.csv'
       - 'ny_input/**/*.csv'
   workflow_dispatch:
@@ -17,40 +18,67 @@ on:
           - both
 
 jobs:
-  process:
+  process-python:
     runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           pip install timezonefinder pytz python-dateutil
-      
+
       - name: Process Mexico City
-        if: github.event.inputs.city == 'mexico_city' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        if: inputs.city == 'mexico_city' || inputs.city == 'both'
         run: |
           python clean_mx_events.py output_mx.csv Mexico_City_MX
-      
+
       - name: Process New York
-        if: github.event.inputs.city == 'new_york' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        if: inputs.city == 'new_york' || inputs.city == 'both'
         run: |
           python clean_ny_events.py output_ny.csv ny_input
-      
+
       - name: Upload Mexico City output
-        if: github.event.inputs.city == 'mexico_city' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        if: inputs.city == 'mexico_city' || inputs.city == 'both'
         uses: actions/upload-artifact@v4
         with:
           name: mexico-city-events
           path: output_mx.csv
-      
+
       - name: Upload New York output
-        if: github.event.inputs.city == 'new_york' || github.event.inputs.city == 'both' || github.event_name != 'workflow_dispatch'
+        if: inputs.city == 'new_york' || inputs.city == 'both'
         uses: actions/upload-artifact@v4
         with:
           name: new-york-events
           path: output_ny.csv
+
+  process-zip:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Extract and process zip files
+        run: npm run process-events -- .
+        env:
+          API_ENDPOINT: ${{ secrets.API_ENDPOINT || '' }}
+
+      - name: Upload extracted events
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraped-events
+          path: /tmp/extracted-events/**/output/events.json
