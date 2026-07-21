@@ -62,3 +62,18 @@ it never invents values the sources did not publish. Unknown stays null.
 
 **Latest run (Aug 1, NY + MX):** 1,332 rows in → 1,195 events out,
 137 cross-source duplicates merged, 0 malformed rows, coordinates 96% filled.
+
+## 4. Fields Never Available (source does not publish them)
+
+These gaps are source-side — no scraping method can recover them.
+They are stored as `null` (JSON) / empty cell (CSV), never guessed.
+
+| Source | Never available |
+|--------|-----------------|
+| **Eventbrite** | — (all fields available) |
+| **Ticketmaster** | `endTime` — organizers almost never publish end times (~90% absent) |
+| **Resident Advisor** | additional images (single image only); coordinates for TBA/secret venues |
+| **Songkick** | `endTime` (end date has no clock time); additional images |
+| **NYC Events Calendar** | `latitude` / `longitude` — the API has no coordinates (recovered via merge with NYC Parks where possible) |
+| **NYC Parks** | street `address` — the feed only gives the park name |
+
