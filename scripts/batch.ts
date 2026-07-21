@@ -1,3 +1,17 @@
+/**
+ * batch.ts - Batch Event Processing Script
+ * 
+ * Reads CSV files from a directory, normalizes event data, and optionally sends to API.
+ * Handles special character removal from titles and descriptions.
+ * 
+ * Usage:
+ *   npx tsx scripts/process-events.ts <input-dir> [--output <output-dir>] [--api <endpoint>]
+ * 
+ * Example:
+ *   npx tsx scripts/process-events.ts eventbrite/sample
+ *   npx tsx scripts/process-events.ts Mexico_City_MX --output ./output --api https://api.example.com/events
+ */
+
 import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync } from 'fs'
 import { join, extname } from 'path'
 import { type ScrapedEvent, type ApiConfig } from '../src/utils/scraper/types'
@@ -113,6 +127,22 @@ function normalizeTime(raw: string): string {
   return ''
 }
 
+function cleanSpecialChars(text: string): string {
+  if (!text) return ''
+  return text
+    .replace(/['']/g, "'")
+    .replace(/[""]/g, '"')
+    .replace(/[""]/g, '"')
+    .replace(/[""]/g, '"')
+    .replace(/['']/g, "'")
+    .replace(/['']/g, "'")
+    .replace(/[&]/g, 'and')
+    .replace(/[@#%]/g, '')
+    .replace(/[^\w\s\-.,!?:;()\/]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function csvRowToEvent(row: Record<string, string>): ScrapedEvent {
   const rawDate = findValue(row, ['start_time', 'start_date', 'date'])
   const rawTime = findValue(row, ['start_time', 'time'])
@@ -156,11 +186,11 @@ function csvRowToEvent(row: Record<string, string>): ScrapedEvent {
   const externalLink = findValue(row, ['external_link', 'url', 'link', 'event_url'])
 
   return {
-    title: findValue(row, FIELD_MAP.title) || 'Untitled Event',
+    title: cleanSpecialChars(findValue(row, FIELD_MAP.title)) || 'Untitled Event',
     date,
     time,
     location,
-    description: findValue(row, FIELD_MAP.description),
+    description: cleanSpecialChars(findValue(row, FIELD_MAP.description)),
     image: image || '',
     url: externalLink,
   }

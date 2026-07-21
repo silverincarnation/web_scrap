@@ -1,10 +1,62 @@
+/**
+ * process-events.ts - Event Data Processing CLI
+ * 
+ * Extracts zip files and processes event data from CSV files.
+ * Can be run manually or triggered by GitHub Actions.
+ * 
+ * Usage:
+ *   npx tsx scripts/process-events.ts <input> [options]
+ * 
+ * Arguments:
+ *   <input>              Directory containing zip files or CSV files
+ * 
+ * Options:
+ *   --output, -o <dir>   Output directory for processed JSON (default: /tmp/output)
+ *   --api, -a <url>      API endpoint to send processed events
+ * 
+ * Examples:
+ *   # Process zip files in current directory
+ *   npx tsx scripts/process-events.ts .
+ * 
+ *   # Process CSV files from a specific folder
+ *   npx tsx scripts/process-events.ts eventbrite/sample
+ * 
+ *   # Process with output directory and API
+ *   npx tsx scripts/process-events.ts Mexico_City_MX --output ./output --api https://api.example.com/events
+ */
+
 import { existsSync, mkdirSync, readdirSync } from 'fs'
 import { join } from 'path'
 import { execSync } from 'child_process'
 import { processDirectory } from './batch'
 
 const EXTRACT_DIR = '/tmp/extracted-events'
-const API_ENDPOINT = process.env.API_ENDPOINT || ''
+
+interface CliOptions {
+  inputDir: string
+  outputDir: string
+  apiEndpoint: string
+}
+
+function parseArgs(): CliOptions {
+  const args = process.argv.slice(2)
+  let inputDir = '.'
+  let outputDir = '/tmp/output'
+  let apiEndpoint = process.env.API_ENDPOINT || ''
+
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i]
+    if (arg === '--output' || arg === '-o') {
+      outputDir = args[++i] || outputDir
+    } else if (arg === '--api' || arg === '-a') {
+      apiEndpoint = args[++i] || apiEndpoint
+    } else if (!arg.startsWith('-')) {
+      inputDir = arg
+    }
+  }
+
+  return { inputDir, outputDir, apiEndpoint }
+}
 
 async function extractZips(rootDir: string): Promise<string[]> {
   const extracted: string[] = []
@@ -33,35 +85,53 @@ async function extractZips(rootDir: string): Promise<string[]> {
 }
 
 async function main() {
-  const rootDir = process.argv[2] || '.'
+  const options = parseArgs()
 
-  if (!existsSync(rootDir)) {
-    console.error(`Directory not found: ${rootDir}`)
+  if (!existsSync(options.inputDir)) {
+    console.error(`Directory not found: ${options.inputDir}`)
     process.exit(1)
   }
 
-  console.log(`Scanning ${rootDir} for zip files...`)
-  const extractDirs = await extractZips(rootDir)
+  // Check if input contains zip files
+  const entries = readdirSync(options.inputDir)
+  const hasZips = entries.some((e) => e.endsWith('.zip'))
 
-  if (extractDirs.length === 0) {
-    console.log('No zip files found.')
-    return
+  let dirsToProcess: string[] = []
+
+  if (hasZips) {
+    console.log(`Scanning ${options.inputDir} for zip files...`)
+    dirsToProcess = await extractZips(options.inputDir)
+
+    if (dirsToProcess.length === 0) {
+      console.log('No zip files found.')
+      return
+    }
+  } else {
+    // Check if directory contains CSV files
+    const csvFiles = entries.filter((e) => e.endsWith('.csv'))
+    if (csvFiles.length === 0) {
+      console.error(`No zip or CSV files found in ${options.inputDir}`)
+      process.exit(1)
+    }
+    dirsToProcess = [options.inputDir]
   }
 
-  for (const dir of extractDirs) {
+  for (const dir of dirsToProcess) {
     console.log(`\nProcessing ${dir}...`)
     await processDirectory({
       inputDir: dir,
-      outputDir: join(dir, 'output'),
-      apiConfig: API_ENDPOINT
+      outputDir: options.outputDir,
+      apiConfig: options.apiEndpoint
         ? {
-            endpoint: API_ENDPOINT,
+            endpoint: options.apiEndpoint,
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
           }
         : undefined,
     })
   }
+
+  console.log('\nDone!')
 }
 
 main().catch((err) => {

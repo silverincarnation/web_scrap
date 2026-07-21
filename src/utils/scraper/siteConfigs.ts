@@ -1,3 +1,15 @@
+/**
+ * siteConfigs.ts - Site-Specific Extraction Configurations
+ * 
+ * Contains CSS selector rules for extracting event data from known platforms:
+ * - Eventbrite
+ * - Meetup
+ * - Luma
+ * - Partiful
+ * 
+ * Extend this file to add support for new event platforms.
+ */
+
 import { type SiteConfig } from './types'
 
 export const siteConfigs: SiteConfig[] = [

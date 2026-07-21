@@ -1,3 +1,15 @@
+/**
+ * extractors.ts - Data Extraction Strategies
+ * 
+ * Implements multiple strategies for extracting event data from HTML:
+ * - JSON-LD structured data (most reliable)
+ * - Microdata (itemtype="Event")
+ * - Site-specific CSS selectors
+ * - Generic fallback (OG meta tags, h1, regex patterns)
+ * 
+ * Each strategy returns a partial event object, with fallbacks filling gaps.
+ */
+
 import { type ScrapedEvent, type ScraperResult, type SiteConfig } from './types'
 import { findSiteConfig } from './siteConfigs'
 

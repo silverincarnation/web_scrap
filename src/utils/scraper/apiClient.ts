@@ -1,3 +1,15 @@
+/**
+ * apiClient.ts - API Client for Event Data
+ * 
+ * Handles sending processed event data to external APIs.
+ * Supports POST and PUT methods with configurable endpoints.
+ * 
+ * Usage:
+ *   import { configureApi, sendEvent } from './apiClient'
+ *   configureApi({ endpoint: 'https://api.example.com/events' })
+ *   await sendEvent(eventData)
+ */
+
 import { type ScrapedEvent, type ApiConfig } from './types'
 
 export interface ApiResponse {

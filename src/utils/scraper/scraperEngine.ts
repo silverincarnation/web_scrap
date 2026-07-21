@@ -1,3 +1,14 @@
+/**
+ * scraperEngine.ts - Core Scraper Engine
+ * 
+ * Fetches HTML from URLs via CORS proxies and extracts event data.
+ * Uses multiple extraction strategies: JSON-LD, microdata, site configs, generic fallback.
+ * 
+ * Usage:
+ *   import { scrapeUrl } from './scraperEngine'
+ *   const result = await scrapeUrl('https://www.eventbrite.com/e/example-tickets-123456')
+ */
+
 import { type ScraperResult, type ScrapedEvent } from './types'
 import { extractEventData } from './extractors'
 
