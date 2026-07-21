@@ -1,27 +1,27 @@
 {
  "meta": {
-  "generatedAt": "2026-07-21T07:52:20Z",
-  "totalEvents": 847,
+  "generatedAt": "2026-07-21T08:21:04Z",
+  "totalEvents": 742,
   "cities": {
    "Mexico City": 63,
-   "New York": 784
+   "New York": 679
   },
   "dates": {
-   "2026-08-01": 847
+   "2026-08-01": 742
   },
   "sources": {
-   "Eventbrite": 313,
-   "Multiple": 25,
-   "NYC Events Calendar": 121,
-   "NYC Parks": 123,
+   "Eventbrite": 310,
+   "Multiple": 119,
+   "NYC Events Calendar": 22,
+   "NYC Parks": 29,
    "Resident Advisor": 60,
    "Songkick": 18,
-   "Ticketmaster": 187
+   "Ticketmaster": 184
   },
-  "paid": 574,
-  "free": 143,
-  "priceUnknown": 130,
-  "withCoordinates": 709,
+  "paid": 568,
+  "free": 89,
+  "priceUnknown": 85,
+  "withCoordinates": 703,
   "schemaNote": "isPaid null = unknown (not free); endTime null = source does not publish it; inCityArea false = suburb within search radius"
  },
  "events": [
@@ -37,7 +37,7 @@
    "longitude": -99.06608,
    "inCityArea": true,
    "date": "2026-08-01",
-   "startTime": "2026-08-01T00:00:00-06:00",
+   "startTime": null,
    "endTime": null,
    "hasTime": false,
    "displayTime": "All day",
@@ -2116,7 +2116,7 @@
    "longitude": -73.99755,
    "inCityArea": true,
    "date": "2026-08-01",
-   "startTime": "2026-08-01T00:00:00-04:00",
+   "startTime": null,
    "endTime": null,
    "hasTime": false,
    "displayTime": "All day",
@@ -2146,7 +2146,7 @@
    "longitude": -73.99156,
    "inCityArea": true,
    "date": "2026-08-01",
-   "startTime": "2026-08-01T00:00:00-04:00",
+   "startTime": null,
    "endTime": null,
    "hasTime": false,
    "displayTime": "All day",
@@ -2605,32 +2605,6 @@
    ]
   },
   {
-   "id": "5b1fcd32fd32",
-   "name": "Summer Sport Experience: Pickleball",
-   "description": "The Summer Sports Experience program participants receive age-appropriate instruction through organized clinics, skill stations, drills, conditioning, and live game situations led by experienced NYC Parks staff",
-   "venue": "Greenbelt Recreation Center in Greenbelt Recreation Center",
-   "address": "Greenbelt Recreation Center in Greenbelt Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/summer-sport-experience-pickleball/1108356/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "9873aa733972",
    "name": "Summer Sport Experience: Pickleball",
    "description": "The Summer Sports Experience program participants receive age-appropriate instruction through organized clinics, skill stations, drills, conditioning, and live game situations led by experienced NYC Parks staff",
@@ -2658,33 +2632,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-sport-experience-pickleball",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "18c69958814e",
-   "name": "Summer Sports Experience: Basketball",
-   "description": "The Summer Sports Experience program participants receive age-appropriate instruction through organized clinics, skill stations, drills, conditioning, and live game situations led by experienced NYC Parks staff",
-   "venue": "Greenbelt Recreation Center in Greenbelt Recreation Center",
-   "address": "Greenbelt Recreation Center in Greenbelt Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/summer-sports-experience-basketball/1108496/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -2715,6 +2664,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-sports-experience-basketball",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -2753,32 +2703,6 @@
    ]
   },
   {
-   "id": "a2b4f6a7206e",
-   "name": "Yoga",
-   "description": "Connect with yourself in Yoga, a class to be enjoyed by all. Experience a fun and light-hearted, mid-intensity flow that will move you seamlessly from Sun Salutation to a final peak pose. We focus on inversions and breath work to ensure you leave class feeling challenged and balanced. Mats are…",
-   "venue": "Tennis Courts",
-   "address": "Tennis Courts in Pelham Bay Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:30:00-04:00",
-   "endTime": "2026-08-01T09:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:30 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/yoga/1114376/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "111f0d764825",
    "name": "Yoga",
    "description": "Connect with yourself in Yoga, a class to be enjoyed by all. Experience a fun and light-hearted, mid-intensity flow that will move you seamlessly from Sun Salutation to a final peak pose. We focus on inversions and breath work to ensure you leave class feeling challenged and balanced. Mats are…",
@@ -2805,33 +2729,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/yoga1",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "7281a4737ab2",
-   "name": "NYRR Open Run: Baisley Pond Park",
-   "description": "NYRR Open Run brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Baisley Pond Park is located near JFK Airport in Springfield Gardens, Queens on…",
-   "venue": "Baisley Pond Park House",
-   "address": "Baisley Pond Park House in Baisley Pond Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-baisley-pond-park/1090236/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -2857,33 +2756,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-baisley-pond-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "09ad3bef209a",
-   "name": "NYRR Open Run: Canarsie Park",
-   "description": "NYRR Open Run Brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Canarsie Park serves the neighborhoods of Canarsie and nearby Flatlands, Mill…",
-   "venue": "Canarsie Park House",
-   "address": "Canarsie Park House in Canarsie Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T10:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-canarsie-park/1090456/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -2909,33 +2783,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-canarsie-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "ef7101f7f99b",
-   "name": "NYRR Open Run: Crocheron Park",
-   "description": "NYRR Open Run brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Widely known for its history with the Crocheron Family and summer house, Crocheron…",
-   "venue": "Entrance to John Golden Park",
-   "address": "Entrance to John Golden Park in John Golden Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-crocheron-park/1090536/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -2961,33 +2810,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-crocheron-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "10cf7a75a6b4",
-   "name": "NYRR Open Run: Highland Park",
-   "description": "NYRR Open Run Brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Located in the Cypress Hills section of Brooklyn, Highland Park is close to East…",
-   "venue": "Elton Street and Jamaica Avenue",
-   "address": "Elton Street and Jamaica Avenue in Highland Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-highland-park/1090816/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -3013,33 +2837,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-highland-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "aee6b94c4796",
-   "name": "NYRR Open Run: Inwood Hill Park",
-   "description": "NYRR Open Run Brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Evidence of Inwood Hill Park's formation exists as caves, valleys, and ridges left…",
-   "venue": "Seaman Avenue and Isham Street Entrance",
-   "address": "Seaman Avenue and Isham Street Entrance in Inwood Hill Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T10:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-inwood-hill-park/1090856/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -3065,33 +2864,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-inwood-hill-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "168a6ae8dba3",
-   "name": "NYRR Open Run: Shore Road Park",
-   "description": "NYRR Open Run Brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Shore Road Park, located in Bay Ridge, Brooklyn, is one of our longer Open Run…",
-   "venue": "Lawn Near 79th Street Entrance",
-   "address": "Lawn Near 79th Street Entrance in Shore Park and Parkway",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-shore-road-park/1091136/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -3117,33 +2891,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-shore-road-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "3309ac0174f9",
-   "name": "NYRR Open Run: Soundview Park",
-   "description": "NYRR Open Run brings free, 5K weekly community-led runs, to neighborhood parks across the greater New York City area. The program is free and open to runners and walkers of all ages, abilities, and experience levels. Called the \\\"Gateway to the Bronx River,\\\" 205-acre Soundview Park is located…",
-   "venue": "Entrance - Lafayette Avenue and Morrison Avenue",
-   "address": "Entrance - Lafayette Avenue and Morrison Avenue in Soundview Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T08:45:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:45 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/nyrr-open-run-soundview-park/1091216/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -3169,6 +2918,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/nyrr-open-run-soundview-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -3321,67 +3071,13 @@
    "tags": [],
    "image": "https://www.nycgovparks.org/common_images/events/full/6a3e79f353ceb.png",
    "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3e79f353ceb.png"
+    "https://www.nycgovparks.org/common_images/events/full/6a3e79f353ceb.png",
+    "http://www.nycgovparks.org/common_images/events/6a3e79f353ceb.png"
    ],
    "url": "https://www1.nyc.gov/events/free-yoga-at-franz-sigel-park-friends-of-4-park-alliance/1061876/1",
    "isPaid": false,
    "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "183cb19abd10",
-   "name": "Free Yoga at Franz Sigel Park - Friends of 4 Park Alliance",
-   "description": "Free yoga class. Bring a mat. All levels welcome. Franz Sigel Park - Meet at Northern end. Brought to you by Friends of 4 Park Alliance.",
-   "venue": "Franz Sigel Park",
-   "address": "Franz Sigel Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T09:00:00-04:00",
-   "endTime": "2026-08-01T10:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "9:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3e79f353ceb.png",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3e79f353ceb.png"
-   ],
-   "url": "https://www1.nyc.gov/events/free-yoga-at-franz-sigel-park-friends-of-4-park-alliance/1061856/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "9c5539a84198",
-   "name": "Free Yoga at Franz Sigel Park - Friends of 4 Park Alliance",
-   "description": "Free yoga class. Bring a mat. All levels welcome. Franz Sigel Park - Meet at Northern end. Brought to you by Friends of 4 Park Alliance.",
-   "venue": "Franz Sigel Park,Franz Sigel Park - Meet at Northern end (in Franz Sigel Park)",
-   "address": "Franz Sigel Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T09:00:00-04:00",
-   "endTime": "2026-08-01T10:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "9:00 AM",
-   "category": "Yoga & Pilates Classes",
-   "tags": [],
-   "image": "http://www.nycgovparks.org/common_images/events/6a3e79f353ceb.png",
-   "images": [
-    "http://www.nycgovparks.org/common_images/events/6a3e79f353ceb.png"
-   ],
-   "url": "https://www.nycgovparks.org/events/2026/08/01/free-yoga-at-franz-sigel-park-friends-of-4-park-alliance",
-   "isPaid": false,
-   "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -3610,32 +3306,6 @@
    ]
   },
   {
-   "id": "ea49420bffcc",
-   "name": "No Excuses Circuit Training",
-   "description": "A high-energy beginner-friendly workout that combines strength and endurance exercises performed in timed stations with minimal rest. Participants rotate through movements targeting different muscle groups to improve fitness. Our goals are to increase stamina, build strength, and enhance overall…",
-   "venue": "Dance Room in St. John&rsquo;s Recreation Center",
-   "address": "Dance Room in St. John&rsquo;s Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T09:00:00-04:00",
-   "endTime": "2026-08-01T09:45:00-04:00",
-   "hasTime": true,
-   "displayTime": "9:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/no-excuses-circuit-training/1089896/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "e9b3d729fe77",
    "name": "No Excuses Circuit Training",
    "description": "A high-energy beginner-friendly workout that combines strength and endurance exercises performed in timed stations with minimal rest. Participants rotate through movements targeting different muscle groups to improve fitness. Our goals are to increase stamina, build strength, and enhance overall…",
@@ -3663,6 +3333,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/no-excuses-circuit-training",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -3763,58 +3434,6 @@
    ]
   },
   {
-   "id": "15ad0c596020",
-   "name": "Zumba",
-   "description": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a combination of fast and slow rhythms that tone and sculpt the body with easy to follow dance steps.",
-   "venue": "Midland Beach Splash Plaza",
-   "address": "Midland Beach Splash Plaza in Franklin D. Roosevelt Boardwalk and Beach",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T09:00:00-04:00",
-   "endTime": "2026-08-01T10:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "9:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/zumba/1115456/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "d5e9f144f117",
-   "name": "Zumba",
-   "description": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic fitness interval training with a combination of fast and slow rhythms that challenge both the heart and muscles. With fun music and…",
-   "venue": "Gymnasium (Court) in Al Oerter Recreation Center",
-   "address": "Gymnasium (Court) in Al Oerter Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T09:00:00-04:00",
-   "endTime": "2026-08-01T10:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "9:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/zumba/1115476/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "13ab367415e7",
    "name": "Zumba",
    "description": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a combination of fast and slow rhythms that tone and sculpt the body with easy to follow dance steps.",
@@ -3842,6 +3461,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/zumba2",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -3872,6 +3492,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/zumba",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4021,32 +3642,6 @@
    ]
   },
   {
-   "id": "d3402ff81834",
-   "name": "Beginner Yoga",
-   "description": "Connect with yourself in Beginner Yoga, a class to be enjoyed by all. Experience a fun and light-hearted, beginner flow that will move you seamlessly from Sun Salutation to a final peak pose. Please bring a mat. The class meets on the lawn north of Sobelsohn Basketball Court.",
-   "venue": "Sobelsohn Basketball Court",
-   "address": "Sobelsohn Basketball Court in Forest Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/beginner-yoga/1054276/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "e32366d72e34",
    "name": "Beginner Yoga",
    "description": "Connect with yourself in Beginner Yoga, a class to be enjoyed by all. Experience a fun and light-hearted, beginner flow that will move you seamlessly from Sun Salutation to a final peak pose. Please bring a mat. The class meets on the lawn north of Sobelsohn Basketball Court.",
@@ -4073,6 +3668,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/beginner-yoga",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4181,32 +3777,6 @@
    ]
   },
   {
-   "id": "263b76b3e0df",
-   "name": "Dance Fitness- Upbeat Pop!",
-   "description": "A 45-minute dance fitness class to your favorite upbeat pop songs! Come prepared to shake, roll, grapevine, and clap. We will use this time to cultivate joy and silliness while getting a great workout and reaping the benefits of cardiovascular fitness. All levels are welcome and encouraged. Whether…",
-   "venue": "Audubon Center at the Boathouse",
-   "address": "Audubon Center at the Boathouse in Prospect Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T10:45:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/dance-fitness-upbeat-pop/1059836/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "520ba9ab4c4a",
    "name": "Dance Fitness- Upbeat Pop!",
    "description": "A 45-minute dance fitness class to your favorite upbeat pop songs! Come prepared to shake, roll, grapevine, and clap. We will use this time to cultivate joy and silliness while getting a great workout and reaping the benefits of cardiovascular fitness. All levels are welcome and encouraged. Whether…",
@@ -4232,6 +3802,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/dance-fitness-upbeat-pop",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4274,34 +3845,6 @@
    ]
   },
   {
-   "id": "ba11ebdc13e0",
-   "name": "Exhibition: Think Global. Act Local.",
-   "description": "Multi artist exhibit of works highlighting endangered local and global species. Learn what NYC Parks is doing within City to protect and preserve local wildlife as well preervation efforts around the world. Free admission.",
-   "venue": "Visitor Center - Satterlee Street and Hylan Boulevard",
-   "address": "Visitor Center - Satterlee Street and Hylan Boulevard in Conference House Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T16:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/69331868b5406.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/69331868b5406.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/exhibition-think-global-act-local/1060356/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "8ed296a041f7",
    "name": "Exhibition: Think Global. Act Local.",
    "description": "Multi artist exhibit of works highlighting endangered local and global species. Learn what NYC Parks is doing within City to protect and preserve local wildlife as well preervation efforts around the world. Free admission.",
@@ -4329,11 +3872,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/69331868b5406.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/69331868b5406.jpg"
+    "http://www.nycgovparks.org/common_images/events/69331868b5406.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/69331868b5406.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/exhibition-think-global-act-local",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4430,32 +3975,6 @@
    ]
   },
   {
-   "id": "97fd82014e27",
-   "name": "KIM: Rev. Dr. Maggie Howard",
-   "description": "\\u200BVega, Shayr (Parks)\\u200B The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a…",
-   "venue": "Play Area",
-   "address": "Play Area in Rev. Dr. Maggie Howard Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kim-rev-dr-maggie-howard/1083436/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "ee428adb6f52",
    "name": "KIM: Rev. Dr. Maggie Howard",
    "description": "​Vega, Shayr (Parks)​The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more!Kias in Motion is a free,…",
@@ -4481,6 +4000,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-rev-dr-maggie-howard",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4511,34 +4031,6 @@
    ]
   },
   {
-   "id": "6b3258792cce",
-   "name": "Kids In Motion: Addabbo Playground",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Addabbo Playground",
-   "address": "Addabbo Playground in Tudor Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a0172e5188.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a0172e5188.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-addabbo-playground/1048936/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "d8a34141a508",
    "name": "Kids In Motion: Addabbo Playground",
    "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more!Kids in Motion is a free, drop-in program without registration.…",
@@ -4563,40 +4055,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c7768b5091.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c7768b5091.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c7768b5091.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a0172e5188.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-addabbo-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "2175684adc0f",
-   "name": "Kids In Motion: Alley Springfield Playground",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Alley Springfield Playground",
-   "address": "Alley Springfield Playground in Alley Pond Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a019731a67.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a019731a67.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-alley-springfield-playground/1064256/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -4623,38 +4089,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c777ee7c50.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c777ee7c50.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c777ee7c50.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a019731a67.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-alley-springfield-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "51e77ff9c38d",
-   "name": "Kids In Motion: Arrochar",
-   "description": "\\u200BVega, Shayr (Parks)\\u200B The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a…",
-   "venue": "Play Area",
-   "address": "Play Area in Arrochar Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-arrochar/1065136/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -4683,6 +4125,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-arrochar",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4720,32 +4163,6 @@
    ]
   },
   {
-   "id": "1eec1f054129",
-   "name": "Kids In Motion: Austin J. McDonald's Playground",
-   "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without…",
-   "venue": "Austin J. McDonald Playground Fieldhouse",
-   "address": "Austin J. McDonald Playground Fieldhouse in Austin J. McDonald Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-austin-j-mcdonalds-playground/1065576/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "68ea12ce361c",
    "name": "Kids In Motion: Austin J. McDonald's Playground",
    "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more!Kias in Motion is a free, drop-in program without…",
@@ -4771,6 +4188,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-austin-j-mcdonalds-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -4808,34 +4226,6 @@
    ]
   },
   {
-   "id": "d6657e1c96f7",
-   "name": "Kids In Motion: Bloomingdale Playground",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Play Area",
-   "address": "Play Area in Bloomingdale Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a02254f739.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a02254f739.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-bloomingdale-playground/1066556/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "6237b2974376",
    "name": "Kids In Motion: Bloomingdale Playground",
    "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more!Kids in Motion is a free, drop-in program without registration.…",
@@ -4858,40 +4248,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76a7e1c4d.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76a7e1c4d.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76a7e1c4d.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a02254f739.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-bloomingdale-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "559137ebe38b",
-   "name": "Kids In Motion: Bowne Park",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Bowne Park Playground",
-   "address": "Bowne Park Playground in Bowne Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a01d8e0cc5.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a01d8e0cc5.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-bowne-park/1066996/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -4919,40 +4283,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c7676058eb.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c7676058eb.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c7676058eb.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a01d8e0cc5.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-bowne-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "6ae6f6b4e267",
-   "name": "Kids In Motion: Bowne Playground",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Play Area",
-   "address": "Play Area in Bowne Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a0169c018f.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a0169c018f.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-bowne-playground/1067436/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -4980,40 +4318,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76ab07214.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76ab07214.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76ab07214.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a0169c018f.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-bowne-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "e92b08b94c71",
-   "name": "Kids In Motion: Brookville Park",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Brookville Playground",
-   "address": "Brookville Playground in Brookville Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a025bc27c2.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a025bc27c2.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-brookville-park/1067876/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5040,40 +4352,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c777a05fda.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c777a05fda.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c777a05fda.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a025bc27c2.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-brookville-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "4bd7ff666e07",
-   "name": "Kids In Motion: Carl Schruz Park",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Catbird Playground",
-   "address": "Catbird Playground in Carl Schurz Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a0240c6abe.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a0240c6abe.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-carl-schruz-park/1068316/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5098,11 +4384,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76dc2fe57.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76dc2fe57.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76dc2fe57.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a0240c6abe.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-carl-schruz-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -5140,32 +4428,6 @@
    ]
   },
   {
-   "id": "d942a1ebcd87",
-   "name": "Kids In Motion: De Matti Playground",
-   "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without…",
-   "venue": "De Matti Playground",
-   "address": "De Matti Playground in De Matti Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-de-matti-playground/1069196/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "8bb85a6591fa",
    "name": "Kids In Motion: De Matti Playground",
    "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more!Kias in Motion is a free, drop-in program without…",
@@ -5191,35 +4453,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-dematti-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "c8b21558b8f3",
-   "name": "Kids In Motion: Elmhurst Park",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Playground",
-   "address": "Playground in Elmhurst Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a0231da453.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a0231da453.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-elmhurst-park/1069636/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5247,38 +4482,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76f39cc65.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76f39cc65.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76f39cc65.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a0231da453.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-elmhurst-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "3e73f935a42d",
-   "name": "Kids In Motion: Faber",
-   "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without…",
-   "venue": "Outdoors at Faber Park Recreation Center in Faber Park Recreation Center",
-   "address": "Outdoors at Faber Park Recreation Center in Faber Park Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-faber/1070076/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5308,35 +4519,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-faber",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "4f62f29e7ccf",
-   "name": "Kids In Motion: Grover Cleveland Playground",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in Grover Cleveland Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a021cd897b.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a021cd897b.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-grover-cleveland-playground/1071056/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5363,11 +4547,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c766e950a8.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c766e950a8.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c766e950a8.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a021cd897b.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-grover-cleveland-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -5405,34 +4591,6 @@
    ]
   },
   {
-   "id": "5a1277275968",
-   "name": "Kids In Motion: Hoover-Manton Playgrounds",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Open Area",
-   "address": "Open Area in Hoover - Manton Playgrounds",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a02003782a.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a02003782a.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-hoover-manton-playgrounds/1071496/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "d919a74aba82",
    "name": "Kids In Motion: Hoover-Manton Playgrounds",
    "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more!Kids in Motion is a free, drop-in program without registration.…",
@@ -5457,11 +4615,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c770de68ff.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c770de68ff.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c770de68ff.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a02003782a.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-hoover-manton-playgrounds",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -5498,32 +4658,6 @@
    ]
   },
   {
-   "id": "041cb04f3e3c",
-   "name": "Kids In Motion: Levy",
-   "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in Levy Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-levy/1072476/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "a9e85b19fb39",
    "name": "Kids In Motion: Levy",
    "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more!Kias in Motion is a free, drop-in program without…",
@@ -5549,35 +4683,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-levy",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "957821121c36",
-   "name": "Kids In Motion: London Planetree Playground",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in London Planetree Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a01aecacc9.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a01aecacc9.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-london-planetree-playground/1072916/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5604,40 +4711,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c768edca63.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c768edca63.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c768edca63.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a01aecacc9.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-london-planetree-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "a6667882aa5d",
-   "name": "Kids In Motion: Lower Highland Playground",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Lower Highland Playground",
-   "address": "Lower Highland Playground in Highland Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a022c7e77c.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a022c7e77c.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-lower-highland-playground/1073876/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5664,40 +4745,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76ca5c6c0.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76ca5c6c0.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76ca5c6c0.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a022c7e77c.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-alleyspringfield-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "7fa0d0cc471a",
-   "name": "Kids In Motion: Nautilus Playground",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Nautilus Playground",
-   "address": "Nautilus Playground in Roy Wilkins Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a020a717de.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a020a717de.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-nautilus-playground/1074856/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5724,40 +4779,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76bbdf39a.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76bbdf39a.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76bbdf39a.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a020a717de.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-nautilus-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "5675edbb1423",
-   "name": "Kids In Motion: Northern Playground",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Northern Blvd. and 94th Street",
-   "address": "Northern Blvd. and 94th Street in Northern Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a01da33d65.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a01da33d65.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-northern-playground/1075296/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5785,11 +4814,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c776a07434.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c776a07434.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c776a07434.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a01da33d65.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-northern-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -5824,32 +4855,6 @@
    ]
   },
   {
-   "id": "7c3432f12189",
-   "name": "Kids In Motion: P.S. 55",
-   "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without…",
-   "venue": "P.S. 55",
-   "address": "P.S. 55 in Lieutenant John H. Martinson Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-ps-55/1076176/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "1a06f8ff8033",
    "name": "Kids In Motion: P.S. 55",
    "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more!Kias in Motion is a free, drop-in program without…",
@@ -5875,6 +4880,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-ps-55",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -5903,40 +4909,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c779dbce4e.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c779dbce4e.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c779dbce4e.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a01826c58d.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-phil-scooter-rizzuto-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "3d6845a6030c",
-   "name": "Kids In Motion: Phil \\\"Scooter\\\" Rizzuto Park",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Playground",
-   "address": "Playground in Phil \\\"Scooter\\\" Rizzuto Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a01826c58d.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a01826c58d.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-phil-scooter-rizzuto-park/1075736/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -5973,34 +4953,6 @@
    ]
   },
   {
-   "id": "32d0652d77d9",
-   "name": "Kids In Motion: Rosemary's Playground",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Playground",
-   "address": "Playground in Rosemary's Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a01bc06f8f.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a01bc06f8f.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-rosemarys-playground/1076616/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "d280ebac9e6e",
    "name": "Kids In Motion: Rosemary's Playground",
    "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more!Kids in Motion is a free, drop-in program without registration.…",
@@ -6025,38 +4977,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76f4ac165.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76f4ac165.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76f4ac165.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a01bc06f8f.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-rosemarys-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "5031012e8a17",
-   "name": "Kids In Motion: Schmul",
-   "description": "\\u200BVega, Shayr (Parks)\\u200B The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a…",
-   "venue": "Playground",
-   "address": "Playground in Schmul Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-schmul/1077496/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -6085,6 +5013,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-schmul",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -6119,32 +5048,6 @@
    ]
   },
   {
-   "id": "b535d0729235",
-   "name": "Kids In Motion: The Big Park",
-   "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without…",
-   "venue": "Entrance - Continental Place and Grandview Avenue",
-   "address": "Entrance - Continental Place and Grandview Avenue in The Big Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-the-big-park/1080436/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "238be5bd4c87",
    "name": "Kids In Motion: The Big Park",
    "description": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more!Kias in Motion is a free, drop-in program without…",
@@ -6170,35 +5073,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-the-big-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "21bb60b64e2f",
-   "name": "Kids In Motion: Torsney Playground",
-   "description": "The Kids In Motion Program engages children in active outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kids In Motion is a free, drop-in program without…",
-   "venue": "Lou Lodati Playground - Play Area",
-   "address": "Lou Lodati Playground - Play Area in Torsney Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a0205b14ed.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a0205b14ed.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-torsney-playground/1080936/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -6225,40 +5101,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c767a47ea8.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c767a47ea8.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c767a47ea8.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a0205b14ed.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-torsney-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "0e28e8ed29fa",
-   "name": "Kids In Motion: Yellowstone Park",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Katzman Playground",
-   "address": "Katzman Playground in Yellowstone Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a019b34fbf.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a019b34fbf.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-yellowstone-park/1082456/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -6286,11 +5136,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c773b6fce1.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c773b6fce1.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c773b6fce1.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a019b34fbf.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kim-yellowstone-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -6327,39 +5179,11 @@
    ]
   },
   {
-   "id": "3a4156d5d318",
-   "name": "Kids in Motion: Al Quinones Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in Al Quiñones Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b990a4260b.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b990a4260b.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-al-quinones-playground/1049476/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "fe8d85f5f3c0",
    "name": "Kids in Motion: Al Quinones Playground",
    "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more!Kids in Motion is a free, drop-in program without…",
    "venue": "Play Area (in Al Quiñones Playground)",
-   "address": "Al Qui&#241;ones Playground",
+   "address": "Al Quiñones Playground",
    "city": "New York",
    "venueArea": "New York",
    "latitude": 40.815412778979,
@@ -6378,11 +5202,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c77aa2f06c.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c77aa2f06c.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c77aa2f06c.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b990a4260b.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-al-quinones-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -6415,34 +5241,6 @@
    ]
   },
   {
-   "id": "2dc97a5f0329",
-   "name": "Kids in Motion: Ben Abrams Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Ben Abrams Playground",
-   "address": "Ben Abrams Playground in Bronx Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98b2a10ff.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98b2a10ff.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-ben-abrams-playground/1066116/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "75633d63225a",
    "name": "Kids in Motion: Ben Abrams Playground",
    "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more!Kids in Motion is a free, drop-in program without…",
@@ -6466,11 +5264,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76ef9ee40.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76ef9ee40.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76ef9ee40.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98b2a10ff.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-ben-abrams-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -6568,34 +5368,6 @@
    ]
   },
   {
-   "id": "e6c7810fb13d",
-   "name": "Kids in Motion: Flynn Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in Flynn Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3e9b0582778.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3e9b0582778.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-flynn-playground/1070616/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "14b6f50a638e",
    "name": "Kids in Motion: Flynn Playground",
    "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more!Kids in Motion is a free, drop-in program without…",
@@ -6619,40 +5391,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c775dd8541.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c775dd8541.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c775dd8541.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a3e9b0582778.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-flynn-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "d6d78745dfb3",
-   "name": "Kids in Motion: Hunts Point Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Basketball Court",
-   "address": "Basketball Court in Hunts Point Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98e5edf86.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98e5edf86.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-hunts-point-playground/1072036/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -6679,11 +5425,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c7782e9d84.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c7782e9d84.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c7782e9d84.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98e5edf86.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-hunts-point-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -6782,34 +5530,6 @@
    ]
   },
   {
-   "id": "347ffa00a06c",
-   "name": "Kids in Motion: Metcalf Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Metcalf Playground",
-   "address": "Metcalf Playground in Soundview Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3e9af96bee4.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3e9af96bee4.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-metcalf-playground/1074416/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "ca92582402f3",
    "name": "Kids in Motion: Metcalf Playground",
    "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more!Kids in Motion is a free, drop-in program without…",
@@ -6833,11 +5553,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c7787ed289.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c7787ed289.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c7787ed289.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a3e9af96bee4.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-metcalf-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -6875,34 +5597,6 @@
    ]
   },
   {
-   "id": "7fa920d0ed22",
-   "name": "Kids in Motion: Seward Park",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Entrance - East Broadway & Essex St",
-   "address": "Entrance - East Broadway & Essex St in Seward Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a01e7ee2ef.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a01e7ee2ef.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-seward-park/1077936/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "d96e8bfcfbee",
    "name": "Kids in Motion: Seward Park",
    "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more!Kids in Motion is a free, drop-in program without registration.…",
@@ -6928,40 +5622,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c771697d40.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c771697d40.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c771697d40.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a01e7ee2ef.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-seward-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "16be7d50757b",
-   "name": "Kids in Motion: Sol Lain Playground",
-   "description": "The Kids in Motion program engages children in active, outdoors play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, and more! Kids in Motion is a free, drop-in program without registration.…",
-   "venue": "Sol Lain Playground",
-   "address": "Sol Lain Playground in Sol Lain Plgd",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4a02130dab3.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4a02130dab3.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-sol-lain-playground/1078376/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -6990,40 +5658,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c7670c6e8d.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c7670c6e8d.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c7670c6e8d.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4a02130dab3.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-sol-lain-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "e7b85a7806d6",
-   "name": "Kids in Motion: Spuyten Duyvil Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in Spuyten Duyvil Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98b3ea02e.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98b3ea02e.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-spuyten-duyvil-playground/1078916/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -7050,40 +5692,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76e7b7494.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76e7b7494.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76e7b7494.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98b3ea02e.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-spuyten-duyvil-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "50e66adf3553",
-   "name": "Kids in Motion: St. James Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "St. James Park Playground",
-   "address": "St. James Park Playground in St. James Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98afa7e7b.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98afa7e7b.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-st-james-playground/1079456/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -7110,40 +5726,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76ac07835.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76ac07835.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76ac07835.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98afa7e7b.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-st-james-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "9dca7f690de2",
-   "name": "Kids in Motion: St. Mary's Park West",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Playground West - Play Area",
-   "address": "Playground West - Play Area in St. Mary's Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98fac210d.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98fac210d.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-st-marys-park-west/1079896/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -7170,11 +5760,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c77085f228.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c77085f228.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c77085f228.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98fac210d.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-st-marys-park-west",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -7211,34 +5803,6 @@
    ]
   },
   {
-   "id": "82bc7709f7e0",
-   "name": "Kids in Motion: Williamsbridge Oval Playground West",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Playground South",
-   "address": "Playground South in Williamsbridge Oval",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98c7b8780.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98c7b8780.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-williamsbridge-oval-playground-west/1081476/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "d7b020a43b0d",
    "name": "Kids in Motion: Williamsbridge Oval Playground West",
    "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more!Kids in Motion is a free, drop-in program without…",
@@ -7262,40 +5826,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c76b654a75.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c76b654a75.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c76b654a75.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98c7b8780.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-williamsbridge-oval-playground-west",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "50fbec5b54f7",
-   "name": "Kids in Motion: Willis Playground",
-   "description": "The Kids in Motion Program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports. games, fitness, demos, board games, water games, and more! Kids in Motion is a free, drop-in program without…",
-   "venue": "Play Area",
-   "address": "Play Area in Willis Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T18:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4b98a94a981.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4b98a94a981.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/kids-in-motion-willis-playground/1082016/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -7322,11 +5860,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c777a5bb5c.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c777a5bb5c.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c777a5bb5c.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4b98a94a981.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/kids-in-motion-willis-playground",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -7434,8 +5974,8 @@
    ]
   },
   {
-   "id": "31210b5eb3ad",
-   "name": "Moves with Lim&#243;n Dance at Bryant Park",
+   "id": "07d21fd7c827",
+   "name": "Moves with Limón Dance at Bryant Park",
    "description": "Move to live accompaniment and experience the joy of dance with dancers from the Limón. Open to all levels and ages - no experience required! Bring friends, family, water on hot days, and enjoy dancing on the grass. Class meets on the northeast corner of the lawn.",
    "venue": "Bryant Park Lawn (in Bryant Park)",
    "address": "Bryant Park",
@@ -7456,40 +5996,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a0392d5f2dda.jpeg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a0392d5f2dda.jpeg"
+    "http://www.nycgovparks.org/common_images/events/6a0392d5f2dda.jpeg",
+    "https://www.nycgovparks.org/common_images/events/full/6a0392d5f2dda.jpeg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/moves-with-limn-dance-at-bryant-park",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "dd6fb7a6c991",
-   "name": "Moves with Limón Dance at Bryant Park",
-   "description": "Move to live accompaniment and experience the joy of dance with dancers from the Limón. Open to all levels and ages - no experience required! Bring friends, family, water on hot days, and enjoy dancing on the grass. Class meets on the northeast corner of the lawn.",
-   "venue": "Bryant Park Lawn",
-   "address": "Bryant Park Lawn in Bryant Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a0392d5f2dda.jpeg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a0392d5f2dda.jpeg"
-   ],
-   "url": "https://www1.nyc.gov/events/moves-with-limon-dance-at-bryant-park/1088356/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -7602,32 +6116,6 @@
    ]
   },
   {
-   "id": "b6511f0e56f2",
-   "name": "Rise&Restore Circuit Training",
-   "description": "This circuit training class combines bodyweight resistance training and conditioning to provide you with a dynamic full body workout. Whether you are a beginner or looking for a challenge; this class for all fitness levels and modifications are always provided. Come engage in exercises that target…",
-   "venue": "Dance Room in Highbridge Recreation Center",
-   "address": "Dance Room in Highbridge Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T10:45:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/riserestore-circuit-training/1094556/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "8b58c3e5dbb3",
    "name": "Rise&Restore Circuit Training",
    "description": "This circuit training class combines bodyweight resistance training and conditioning to provide you with a dynamic full body workout. Whether you are a beginner or looking for a challenge; this class for all fitness levels and modifications are always provided. Come engage in exercises that target…",
@@ -7654,6 +6142,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/riserestore-circuit-training",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -7780,40 +6269,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a5c776dd0be7.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a5c776dd0be7.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a5c776dd0be7.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a22d503cb0df.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-sports-experience-st-marys-park-game-of-zones-girls-basketball-clinic",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "771fb2234e8c",
-   "name": "Summer Sports Experience: St. Mary's Park \\\"Game of Zones Girls Basketball Clinic\\\"",
-   "description": "If you love basketball and want to improve your skills, join game of zones at St. Mary's Park ! Whether you are a beginner or experienced player who wants to come and improve their skills and play, do it with us! Saturdays | 10:00 a.m. - 11:00 a.m. | 8 - 11 yrs. Saturdays | 11:30 a.m. - 2:00 p.m. |…",
-   "venue": "Basketball Courts",
-   "address": "Basketball Courts in St. Mary's Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a22d503cb0df.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a22d503cb0df.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/summer-sports-experience-st-marys-park-game-of-zones-girls-basketball-clinic/1109556/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -7914,34 +6377,6 @@
    ]
   },
   {
-   "id": "28c9ba22e2d5",
-   "name": "Yoga in the Park",
-   "description": "Stretch, breathe, and find your inner peace at Randall's Island Park's free outdoor yoga series. Guided by a beloved, local yoga instructor, participants will flow through a calming and grounding sequence against the backdrop of the uptown skyline. All levels and abilities are welcome. Bring a…",
-   "venue": "East River Picnic Area",
-   "address": "East River Picnic Area in Randall's Island Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/69a0a4db5694b.png",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/69a0a4db5694b.png"
-   ],
-   "url": "https://www1.nyc.gov/events/yoga-in-the-park/1114736/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "2785324dd14e",
    "name": "Yoga in the Park",
    "description": "Stretch, breathe, and find your inner peace at Randall’s Island Park’s free outdoor yoga series. Guided by a beloved, local yoga instructor, participants will flow through a calming and grounding sequence against the backdrop of the uptown skyline. All levels and abilities are welcome. Bring a…",
@@ -7969,38 +6404,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/69a0a4db5694b.png",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/69a0a4db5694b.png"
+    "http://www.nycgovparks.org/common_images/events/69a0a4db5694b.png",
+    "https://www.nycgovparks.org/common_images/events/full/69a0a4db5694b.png"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/yoga-in-the-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "b05f84d776ec",
-   "name": "Zumba",
-   "description": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a combination of fast and slow rhythms that tone and sculpt the body with easy to follow dance steps.",
-   "venue": "Gymnasium in St. John&rsquo;s Recreation Center",
-   "address": "Gymnasium in St. John&rsquo;s Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:00:00-04:00",
-   "endTime": "2026-08-01T11:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/zumba/1115436/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8031,33 +6442,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/zumba1",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "00df66c3cc69",
-   "name": "Bodyweight Burn Circuit Training",
-   "description": "A bodyweight circuit class combining cardio, strength, and core-focused movements for a dynamic full-body workout! This class welcomes all fitness levels.",
-   "venue": "Brooklyn Public Library - Brooklyn Heights",
-   "address": "Brooklyn Public Library - Brooklyn Heights in Cadman Plaza Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:30:00-04:00",
-   "endTime": "2026-08-01T11:15:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:30 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/bodyweight-burn-circuit-training/1055016/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8086,6 +6472,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/bodyweight-burn-circuit-training",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -8121,8 +6508,8 @@
    ]
   },
   {
-   "id": "67bc7f633a02",
-   "name": "LaBlast&#174; Fitness",
+   "id": "488b7fa95a72",
+   "name": "LaBlast® Fitness",
    "description": "This dance fitness program is based on ballroom dances, including those seen on Dancing with the Stars. This workout in disguise blends dance patterns, fitness, and music to create a low impact workout suitable for all levels.",
    "venue": "Brooklyn Public Library - New Utrecht",
    "address": null,
@@ -8150,8 +6537,8 @@
    ]
   },
   {
-   "id": "f1a7edf2882a",
-   "name": "STRONG Nation&#174;",
+   "id": "7379ee59653a",
+   "name": "STRONG Nation®",
    "description": "STRONG Nation® combines body weight, muscle conditioning, cardio and plyometric training moves synced to original music that has been specifically designed to match every single move. Every squat, every lunge, every burpee is driven by the music, helping you make it to that last rep, and maybe even…",
    "venue": "Rock Climbing Wall Room (in Gertrude Ederle Recreation Center)",
    "address": "Gertrude Ederle Recreation Center",
@@ -8176,33 +6563,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/strong-nation1",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "7379ee59653a",
-   "name": "STRONG Nation®",
-   "description": "STRONG Nation® combines body weight, muscle conditioning, cardio and plyometric training moves synced to original music that has been specifically designed to match every single move. Every squat, every lunge, every burpee is driven by the music, helping you make it to that last rep, and maybe even…",
-   "venue": "Rock Climbing Wall Room in Gertrude Ederle Recreation Center",
-   "address": "Rock Climbing Wall Room in Gertrude Ederle Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T10:30:00-04:00",
-   "endTime": "2026-08-01T11:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:30 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/strong-nationr/1105656/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8278,32 +6640,6 @@
    ]
   },
   {
-   "id": "17c0fc1fe945",
-   "name": "Basic Canoeing",
-   "description": "Few experiences compare with being on the open water in New York City. The rhythm of the waves, the sun on your face, and the exhilaration of slicing through the water all add up to an experience you'll never forget. Our trained Urban Park Rangers will lead you on canoe adventures that range from…",
-   "venue": "Oakland Lake",
-   "address": "Oakland Lake in Alley Pond Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T12:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/basic-canoeing/1053916/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "c9aae26418b3",
    "name": "Basic Canoeing",
    "description": "Few experiences compare with being on the open water in New York City. The rhythm of the waves, the sun on your face, and the exhilaration of slicing through the water all add up to an experience you’ll never forget. Our trained Urban Park Rangers will lead you on canoe adventures that range from…",
@@ -8326,40 +6662,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/basic-canoeing",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "c438f72ed957",
-   "name": "Best Special Kids: Horticulture and Art Workshop with Gisselle Ramirez",
-   "description": "Join Giselle of Best Special Kids for this 1.5-2hr workshop that engages children with disabilities and their families in a sensory-friendly horticulture and art experience. Participants will decorate nursery pots and plant herbs or small vegetables, combining creativity with hands-on learning. \\n…",
-   "venue": "Bronx Park",
-   "address": "Shoelace Park - Bronx Boulevard and 228th Street",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T13:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Free",
-   "tags": [
-    "Parks & Recreation",
-    "Kids and Family",
-    "Education",
-    "General Events"
-   ],
-   "image": "https://publish-p136379-e1368845.adobeaemcloud.com/content/dam/nycgov/events/feature/indoor-garden-art.jpg",
-   "images": [
-    "https://publish-p136379-e1368845.adobeaemcloud.com/content/dam/nycgov/events/feature/indoor-garden-art.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/best-special-kids-horticulture-and-art-workshop-with-gisselle-ramirez/1117256/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8386,42 +6690,19 @@
     "Best for Kids",
     "Wildlife",
     "Workshops",
-    "Accessible Activities"
+    "Accessible Activities",
+    "Parks & Recreation"
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a3fdfcddf4b7.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a3fdfcddf4b7.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a3fdfcddf4b7.jpg",
+    "https://publish-p136379-e1368845.adobeaemcloud.com/content/dam/nycgov/events/feature/indoor-garden-art.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/best-special-kids-horticulture-and-art-workshop-with-gissell",
-   "isPaid": null,
+   "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "0c5074585cd6",
-   "name": "Cardio Punch",
-   "description": "Cardio Punch is a total body, non-contact workout fit for all levels. Punch, hook, and kick to motivating, high-energy music that progress into heart-pumping combinations.",
-   "venue": "Boardwalk at Beach 60th Street",
-   "address": "Boardwalk at Beach 60th Street in Rockaway Beach and Boardwalk",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T12:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/cardio-punch/1056956/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8450,6 +6731,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/cardio-punch",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -8491,34 +6773,6 @@
    ]
   },
   {
-   "id": "925c67f76677",
-   "name": "Community Paddle at Starlight Park",
-   "description": "Join the Bronx River Alliance for a free community paddle at Starlight Park! Come see your neighborhood from the river's perspective! This event is first come, first served with no pre-registration available. \\\"Waves\\\" of paddlers will enjoy the river for about 30-40 minutes, after signing waivers…",
-   "venue": "Bronx River House",
-   "address": "Bronx River House in Starlight Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T15:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a270448e891a.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a270448e891a.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/community-paddle-at-starlight-park/1058996/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "e7ece3bf85a9",
    "name": "Community Paddle at Starlight Park",
    "description": "Join the Bronx River Alliance for a free community paddle at Starlight Park! Come see your neighborhood from the river’s perspective!This event is first come, first served with no pre-registration available.“Waves” of paddlers will enjoy the river for about 30-40 minutes, after signing waivers and…",
@@ -8540,38 +6794,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a270448e891a.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a270448e891a.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a270448e891a.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a270448e891a.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/community-paddle-at-starlight-park",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "d9daa2043499",
-   "name": "Dance Fitness",
-   "description": "Join Shape Up NYC for a free dance fitness class every Saturday at West Harlem Piers Park! The instructor for this class will change week to week. This summer the following instructors will be featured: Donnette \\\"Sonnia\\\" McFarlane, Claudia Gomez, Taneka Teel, Beverly Brown, Carolina Morales,…",
-   "venue": "125th Street and Marginal Street",
-   "address": "125th Street and Marginal Street in West Harlem Piers",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T12:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/dance-fitness/1059476/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8603,35 +6833,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/dance-fitness1",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "d606a9e8b6e9",
-   "name": "Dance in the Park: Merengue",
-   "description": "Bring your energy and get ready to move at Merengue in the Park! Set against the backdrop of the waterfront and summer breeze, this lively class focuses on rhythm, connection, and fun. Participants will learn easy-to-follow steps and enjoy the fast-paced spirit of Merengue with an enthusiastic…",
-   "venue": "East River Picnic Area",
-   "address": "East River Picnic Area in Randall's Island Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T11:45:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3d966cf0b43.JPG",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3d966cf0b43.JPG"
-   ],
-   "url": "https://www1.nyc.gov/events/dance-in-the-park-merengue/1059996/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -8661,11 +6864,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a3d966cf0b43.JPG",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a3d966cf0b43.JPG"
+    "http://www.nycgovparks.org/common_images/events/6a3d966cf0b43.JPG",
+    "https://www.nycgovparks.org/common_images/events/full/6a3d966cf0b43.JPG"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/dance-in-the-park-merengue",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -8805,34 +7010,6 @@
    ]
   },
   {
-   "id": "415b70b3a0cc",
-   "name": "Indigenous Art Workshop with NAIC-NY",
-   "description": "Join the the North American Indigenous Center of New York and the Bronx River Alliance for an Indigenous Art Workshop at Starlight Park! This family and kid-friendly event will offer participants an opportunity to learn traditional indigenous crafts, and gain exposure to contemporary indigenous…",
-   "venue": "Bronx River House",
-   "address": "Bronx River House in Starlight Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T15:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a33fcef767dc.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a33fcef767dc.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/indigenous-art-workshop-with-naic-ny/1050576/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "4c208400a711",
    "name": "Indigenous Art Workshop with NAIC-NY",
    "description": "Join the the North American Indigenous Center of New York and the Bronx River Alliance for an Indigenous Art Workshop at Starlight Park!This family and kid-friendly event will offer participants an opportunity to learn traditional indigenous crafts, and gain exposure to contemporary indigenous…",
@@ -8855,11 +7032,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a33fcef767dc.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a33fcef767dc.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a33fcef767dc.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a33fcef767dc.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/indigenous-art-workshop-with-naicny",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -8895,32 +7074,6 @@
    ]
   },
   {
-   "id": "0ddada8fd0dd",
-   "name": "Nature's Workshop: Sandcastles and Beachcombing",
-   "description": "On National Sandcastle Day, explore how sand and water work together to make strong sandcastles and try fun experiments on the beach. We'll also go beachcombing along the shoreline to look for shells, stones, and other natural treasures while learning how tides and waves shape what we find. It's a…",
-   "venue": "Entrance - Cornelia Avenue and Chester Avenue",
-   "address": "Entrance - Cornelia Avenue and Chester Avenue in Wolfe's Pond Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T12:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/natures-workshop-sandcastles-and-beachcombing/1089816/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "c5d3d78e37f1",
    "name": "Nature's Workshop: Sandcastles and Beachcombing",
    "description": "On National Sandcastle Day, explore how sand and water work together to make strong sandcastles and try fun experiments on the beach. We’ll also go beachcombing along the shoreline to look for shells, stones, and other natural treasures while learning how tides and waves shape what we find. It’s a…",
@@ -8945,6 +7098,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/natures-workshop-sandcastles-and-beachcombing",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -9031,32 +7185,6 @@
    ]
   },
   {
-   "id": "ef519579aac0",
-   "name": "Ongoing Outdoor Museum Exhibit: Alice's Terracotta Garden",
-   "description": "Terra cotta sculpture garden featuring antique architectural ornaments from Tottenville's Atlantic Terra Cotta Company (west side lawn of Biddle House). NYC Parks and the Tottenville Historical Society invite you to visit a unique collection of terracotta artifacts that chronicle…",
-   "venue": "H.H. Biddle House",
-   "address": "H.H. Biddle House in Conference House Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T15:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/ongoing-outdoor-museum-exhibit-alices-terracotta-garden/1091936/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "fa058cf80477",
    "name": "Ongoing Outdoor Museum Exhibit: Alice's Terracotta Garden",
    "description": "Terra cotta sculpture garden featuring antique architectural ornaments from Tottenville's Atlantic Terra Cotta Company (west side lawn of Biddle House).NYC Parks and the Tottenville Historical Society invite you to visit a unique collection of terracotta artifacts that chronicle…",
@@ -9084,6 +7212,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/ongoing-outdoor-museum-exhibit-alices-terracotta-garden",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -9224,32 +7353,6 @@
    ]
   },
   {
-   "id": "82be140aa683",
-   "name": "Salt Marsh Ecology Hike",
-   "description": "Join the Urban Park Rangers for an interactive walk exploring how the landscape and ecology of Marine Park has been shaped by landfill. Learn about the efforts made to mitigate climate change, conserve natural resources and ecosystem services.",
-   "venue": "Salt Marsh Nature Center",
-   "address": "Salt Marsh Nature Center in Marine Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T11:00:00-04:00",
-   "endTime": "2026-08-01T12:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "11:00 AM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/salt-marsh-ecology-hike/1094956/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "2da342b4335f",
    "name": "Salt Marsh Ecology Hike",
    "description": "Join the Urban Park Rangers for an interactive walk exploring how the landscape and ecology of Marine Park has been shaped by landfill. Learn about the efforts made to mitigate climate change, conserve natural resources and ecosystem services.",
@@ -9275,6 +7378,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/salt-marsh-ecology-hike",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -9702,32 +7806,6 @@
    ]
   },
   {
-   "id": "b328fc3f639c",
-   "name": "Chair Yoga",
-   "description": "Connect with yourself in Chair Yoga, a class to be enjoyed by all- but designed for those who prefer to be seated. Experience a fun and light-hearted class that provides a seated flow. The goal is to raise your heart rate, challenge all muscle groups and improve balance while remaining seated with…",
-   "venue": "Ballroom in Fort Hamilton Senior Recreation Center",
-   "address": "Ballroom in Fort Hamilton Senior Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T12:00:00-04:00",
-   "endTime": "2026-08-01T13:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "12:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/chair-yoga/1057916/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "b4fdf5477f32",
    "name": "Chair Yoga",
    "description": "Connect with yourself in Chair Yoga, a class to be enjoyed by all- but designed for those who prefer to be seated. Experience a fun and light-hearted class that provides a seated flow. The goal is to raise your heart rate, challenge all muscle groups and improve balance while remaining seated with…",
@@ -9754,6 +7832,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/chair-yoga",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -10039,32 +8118,6 @@
    ]
   },
   {
-   "id": "e34573d74bf5",
-   "name": "Summer Sports Experience: Basketball Seasonal Clinics at Faber Recreation Center",
-   "description": "The Summer Sports Experience programs participants receive age-appropriate instruction through organized clinics, skill stations, drills, conditioning, and live game situations led by NYC Parks Staff.",
-   "venue": "Multi-Use Room B in Faber Park Recreation Center",
-   "address": "Multi-Use Room B in Faber Park Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T12:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "12:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/summer-sports-experience-basketball-seasonal-clinics-at-faber-recreation-center/1108516/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "5e651c4ec5bb",
    "name": "Summer Sports Experience: Basketball Seasonal Clinics at Faber Recreation Center",
    "description": "The Summer Sports Experience programs participants receive age-appropriate instruction through organized clinics, skill stations, drills, conditioning, and live game situations led by NYC Parks Staff.",
@@ -10091,35 +8144,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-sports-experience-basketball-seasonal-clinics-at-faber-recreation-center",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "f2344e16bb67",
-   "name": "Summer on the Hudson: Billion Oyster Project Presentation",
-   "description": "Come see and learn about the Billion Oyster Project on the Baylander's Jungle Deck. It's the latest effort to restore our harbor!",
-   "venue": "On the Pier",
-   "address": "On the Pier in West Harlem Piers",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T12:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "12:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/67e1949b0ad76.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/67e1949b0ad76.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/summer-on-the-hudson-billion-oyster-project-presentation/1106176/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -10147,38 +8173,14 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/67e1949b0ad76.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/67e1949b0ad76.jpg"
+    "http://www.nycgovparks.org/common_images/events/67e1949b0ad76.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/67e1949b0ad76.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-on-the-hudson-billion-oyster-project-presentation",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "43c12542dc9e",
-   "name": "Yoga",
-   "description": "This open level class is designed to awaken your mind, body and senses through controlled breathing, simple meditation, and the adoption of specific bodily postures. Please bring a mat and a lock to lock up your bag. The center does not allow anyone to bring their bags to the dance room except:…",
-   "venue": "Multi-Use Room in St. James Recreation Center",
-   "address": "Multi-Use Room in St. James Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T12:15:00-04:00",
-   "endTime": "2026-08-01T13:15:00-04:00",
-   "hasTime": true,
-   "displayTime": "12:15 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/yoga/1114356/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -10209,33 +8211,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/yoga",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "6767d5bbf5c1",
-   "name": "Basketball Clinic at Highbridge Recreation Center (Ages: 5 to 7)",
-   "description": "This Instructional basketball clinic will provide an opportunity for youth, regardless of skill to have a positive basketball experience followed by league play. Participants will have the opportunity to learn and practice the fundamentals of Basketball and advance their basketball skills through a…",
-   "venue": "Gymnasium in Highbridge Recreation Center",
-   "address": "Gymnasium in Highbridge Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T12:30:00-04:00",
-   "endTime": "2026-08-01T13:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "12:30 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/basketball-clinic-at-highbridge-recreation-center-ages-5-to-7/1054116/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -10265,6 +8242,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/basketball-clinic-at-highbridge-recreation-center-ages-5-to-7",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -10377,32 +8355,6 @@
    ]
   },
   {
-   "id": "0770982111a9",
-   "name": "Hula Hoop Aerobics",
-   "description": "his creative and fun workout fuses high-energy dance aerobics with hula hoops! Hoops are available for loaning. Participants must bring waist belts (waist trainers). Participants must bring locks to lock up their bags. Center does not allow anyone to bring their bags to the dance room except;…",
-   "venue": "Multi-Use Room B in Pelham Fritz Recreation Center",
-   "address": "Multi-Use Room B in Pelham Fritz Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T12:30:00-04:00",
-   "endTime": "2026-08-01T13:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "12:30 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/hula-hoop-aerobics/1050476/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "d9df3449fd14",
    "name": "Hula Hoop Aerobics",
    "description": "his creative and fun workout fuses high-energy dance aerobics with hula hoops! Hoops are available for loaning. Participants must bring waist belts (waist trainers). Participants must bring locks to lock up their bags. Center does not allow anyone to bring their bags to the dance room except;…",
@@ -10430,6 +8382,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/hula-hoop-aerobics",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -10651,32 +8604,6 @@
    ]
   },
   {
-   "id": "554661237b8e",
-   "name": "Historic New York: The Little Red Lighthouse",
-   "description": "The Jeffrey's Hook lighthouse, erected in 1880 and moved to its current site in 1921, has become widely known as the children's literary landmark \\\"The Little Red Lighthouse and the Great Gray Bridge.\\\" Rediscover the history of this unique landmark. Open access between 1:00pm and 2:45pm.…",
-   "venue": "Little Red Lighthouse",
-   "address": "Little Red Lighthouse in Fort Washington Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T13:00:00-04:00",
-   "endTime": "2026-08-01T15:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "1:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/historic-new-york-the-little-red-lighthouse/1049956/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "5007be43e57e",
    "name": "Historic New York: The Little Red Lighthouse",
    "description": "The Jeffrey's Hook lighthouse, erected in 1880 and moved to its current site in 1921, has become widely known as the children's literary landmark \"The Little Red Lighthouse and the Great Gray Bridge.\" Rediscover the history of this unique landmark. Open access between 1:00pm and 2:45pm.…",
@@ -10701,6 +8628,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/historic-new-york-the-little-red-lighthouse",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -10811,32 +8739,6 @@
    ]
   },
   {
-   "id": "258f8e098cab",
-   "name": "Magnetic Archery and Foam Axe Throwing",
-   "description": "Our free archery class is a bullseye! Learn the art of archery with free lessons taught by our expert Urban Park Rangers. This program uses safe equipment with magnetic arrows and targets. All equipment will be provided. Foam axe throwing will be available for ages 5 and over.",
-   "venue": "Crotona Nature Center",
-   "address": "Crotona Nature Center in Crotona Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T13:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "1:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/magnetic-archery-and-foam-axe-throwing/1086916/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "87af5d999f8b",
    "name": "Magnetic Archery and Foam Axe Throwing",
    "description": "Our free archery class is a bullseye! Learn the art of archery with free lessons taught by our expert Urban Park Rangers. This program uses safe equipment with magnetic arrows and targets. All equipment will be provided. Foam axe throwing will be available for ages 5 and over.",
@@ -10859,6 +8761,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/magnetic-archery-and-foam-axe-throwing",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -10901,32 +8804,6 @@
    ]
   },
   {
-   "id": "c847baa54366",
-   "name": "Park Open Studio",
-   "description": "Led by a local teaching artist, this drop-in class invites participants to explore creativity through hands-on artmaking under the shade of Scrabble Plaza's trees. Past mediums have included plein-air drawing, printmaking, cyanotypes, and more. All materials are provided by the Washington Square…",
-   "venue": "Northwest Corner Seating Area",
-   "address": "Northwest Corner Seating Area in Washington Square Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T13:00:00-04:00",
-   "endTime": "2026-08-01T15:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "1:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/park-open-studio/1092536/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "260f1fb955b3",
    "name": "Park Open Studio",
    "description": "Led by a local teaching artist, this drop-in class invites participants to explore creativity through hands-on artmaking under the shade of Scrabble Plaza’s trees. Past mediums have included plein-air drawing, printmaking, cyanotypes, and more. All materials are provided by the Washington Square…",
@@ -10952,6 +8829,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/park-open-studio",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -10994,8 +8872,8 @@
    ]
   },
   {
-   "id": "444b00e5c237",
-   "name": "STRONG Nation&#174;",
+   "id": "b2534164a126",
+   "name": "STRONG Nation®",
    "description": "STRONG Nation® combines body weight, muscle conditioning, cardio and plyometric training moves synced to original music that has been specifically designed to match every single move. Every squat, every lunge, every burpee is driven by the music, helping you make it to that last rep, and maybe even…",
    "venue": "Dance Room (in Constance Baker Motley Recreation Center)",
    "address": "Constance Baker Motley Recreation Center",
@@ -11020,33 +8898,8 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/strong-nation",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
-   ]
-  },
-  {
-   "id": "b2534164a126",
-   "name": "STRONG Nation®",
-   "description": "STRONG Nation® combines body weight, muscle conditioning, cardio and plyometric training moves synced to original music that has been specifically designed to match every single move. Every squat, every lunge, every burpee is driven by the music, helping you make it to that last rep, and maybe even…",
-   "venue": "Dance Room in Constance Baker Motley Recreation Center",
-   "address": "Dance Room in Constance Baker Motley Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T13:00:00-04:00",
-   "endTime": "2026-08-01T14:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "1:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/strong-nationr/1105636/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
    ]
   },
   {
@@ -11202,32 +9055,6 @@
    ]
   },
   {
-   "id": "1e394fe34d6b",
-   "name": "All That Skitters!",
-   "description": "How does the Fiddler Crab survive in the salt marsh tides? What other crabs live in the marsh? What happens in the winter? Where do Horseshoe Crabs fit in? Explore the complexities and threats to the fragile salt marsh with Mike Feller, retired Chief Naturalist of the NYC Parks Department.…",
-   "venue": "Salt Marsh Nature Center",
-   "address": "Salt Marsh Nature Center in Marine Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T13:30:00-04:00",
-   "endTime": "2026-08-01T14:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "1:30 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/all-that-skitters/1053236/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "b49c6754a33b",
    "name": "All That Skitters!",
    "description": "How does the Fiddler Crab survive in the salt marsh tides? What other crabs live in the marsh? What happens in the winter? Where do Horseshoe Crabs fit in? Explore the complexities and threats to the fragile salt marsh with Mike Feller, retired Chief Naturalist of the NYC Parks Department.…",
@@ -11250,6 +9077,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/all-that-skitters",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -11292,32 +9120,6 @@
    ]
   },
   {
-   "id": "a5ac4260f707",
-   "name": "Basketball Clinic at Highbridge Recreation Center (Ages: 8 to 12)",
-   "description": "This Instructional basketball clinic will provide an opportunity for youth, regardless of skill to have a positive basketball experience followed by league play. Participants will have the opportunity to learn and practice the fundamentals of Basketball and advance their basketball skills through a…",
-   "venue": "Gymnasium in Highbridge Recreation Center",
-   "address": "Gymnasium in Highbridge Recreation Center",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T13:45:00-04:00",
-   "endTime": "2026-08-01T14:45:00-04:00",
-   "hasTime": true,
-   "displayTime": "1:45 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/basketball-clinic-at-highbridge-recreation-center-ages-8-to-12/1054096/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "86ec82aca7b2",
    "name": "Basketball Clinic at Highbridge Recreation Center (Ages: 8 to 12)",
    "description": "This Instructional basketball clinic will provide an opportunity for youth, regardless of skill to have a positive basketball experience followed by league play. Participants will have the opportunity to learn and practice the fundamentals of Basketball and advance their basketball skills through a…",
@@ -11344,6 +9146,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/basketball-clinic-at-highbridge-recreation-center-ages-8-to-12",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -11854,40 +9657,6 @@
    ]
   },
   {
-   "id": "da0e34af2ac1",
-   "name": "Little Shop of Horrors",
-   "description": null,
-   "venue": "Westside Theatre Upstairs - NY",
-   "address": "252 W 81st St",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": 40.785999,
-   "longitude": -73.9758,
-   "inCityArea": true,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T14:00:00-04:00",
-   "endTime": null,
-   "hasTime": true,
-   "displayTime": "2:00 PM",
-   "category": "Arts & Theatre",
-   "tags": [
-    "Theatre",
-    "Musical"
-   ],
-   "image": "https://s1.ticketm.net/dam/a/2c8/212bcfc5-dba6-4537-b62e-d63d6ceac2c8_EVENT_DETAIL_PAGE_16_9.jpg",
-   "images": [
-    "https://s1.ticketm.net/dam/a/2c8/212bcfc5-dba6-4537-b62e-d63d6ceac2c8_EVENT_DETAIL_PAGE_16_9.jpg",
-    "https://s1.ticketm.net/dam/a/2c8/212bcfc5-dba6-4537-b62e-d63d6ceac2c8_TABLET_LANDSCAPE_3_2.jpg",
-    "https://s1.ticketm.net/dam/a/2c8/212bcfc5-dba6-4537-b62e-d63d6ceac2c8_RETINA_PORTRAIT_3_2.jpg",
-    "https://s1.ticketm.net/dam/a/2c8/212bcfc5-dba6-4537-b62e-d63d6ceac2c8_TABLET_LANDSCAPE_16_9.jpg"
-   ],
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7p817",
-   "isPaid": true,
-   "sources": [
-    "Ticketmaster"
-   ]
-  },
-  {
    "id": "97e764d35a90",
    "name": "Lost Boys Musical",
    "description": null,
@@ -12364,39 +10133,7 @@
    "category": "Arts & Theatre",
    "tags": [
     "Theatre",
-    "Musical"
-   ],
-   "image": "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_TABLET_LANDSCAPE_LARGE_16_9.jpg",
-   "images": [
-    "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_TABLET_LANDSCAPE_LARGE_16_9.jpg",
-    "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_CUSTOM.jpg",
-    "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_ARTIST_PAGE_3_2.jpg",
-    "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_EVENT_DETAIL_PAGE_16_9.jpg"
-   ],
-   "url": "https://www.ticketmaster.com/the-great-gatsby-new-york-new-york-08-01-2026/event/Z1r9uZruZqGZ17Je-V",
-   "isPaid": true,
-   "sources": [
-    "Ticketmaster"
-   ]
-  },
-  {
-   "id": "52ecce2f98cf",
-   "name": "The Great Gatsby",
-   "description": null,
-   "venue": "Broadway Theatre-New York",
-   "address": "1681 Broadway",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": 40.765202,
-   "longitude": -73.985298,
-   "inCityArea": true,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T14:00:00-04:00",
-   "endTime": null,
-   "hasTime": true,
-   "displayTime": "2:00 PM",
-   "category": "Arts & Theatre",
-   "tags": [
+    "Musical",
     "Miscellaneous"
    ],
    "image": "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_TABLET_LANDSCAPE_LARGE_16_9.jpg",
@@ -12406,7 +10143,7 @@
     "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_ARTIST_PAGE_3_2.jpg",
     "https://s1.ticketm.net/dam/a/54c/bf34e79b-60f9-4403-b79e-dba32c25254c_EVENT_DETAIL_PAGE_16_9.jpg"
    ],
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-47v",
+   "url": "https://www.ticketmaster.com/the-great-gatsby-new-york-new-york-08-01-2026/event/Z1r9uZruZqGZ17Je-V",
    "isPaid": true,
    "sources": [
     "Ticketmaster"
@@ -13217,32 +10954,6 @@
    ]
   },
   {
-   "id": "b0664094aa11",
-   "name": "Seining",
-   "description": "Our experienced Urban Park Rangers teach the ecology of our waterways on every seining program. Get ready to get your hands wet; seining programs use nets to catch fish. All equipment is provided; this program is recommended for ages 8 years and older. Participation is first-come, first-served.",
-   "venue": "Entrance - East 88th Street and Seaview Avenue",
-   "address": "Entrance - East 88th Street and Seaview Avenue in Canarsie Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T15:00:00-04:00",
-   "endTime": "2026-08-01T16:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "3:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/seining/1095056/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "27d021f9951c",
    "name": "Seining",
    "description": "Our experienced Urban Park Rangers teach the ecology of our waterways on every seining program. Get ready to get your hands wet; seining programs use nets to catch fish. All equipment is provided; this program is recommended for ages 8 years and older. Participation is first-come, first-served.",
@@ -13268,6 +10979,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/seining",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -13339,34 +11051,6 @@
    ]
   },
   {
-   "id": "9f7a64e801ef",
-   "name": "Summer on the Hudson: Story Hour!",
-   "description": "Weekly story time for kids featuring rotating books and guest readers. Events take place on Saturdays in May, June, August and September. No events May 16 or September 12.",
-   "venue": "102nd Street Field House",
-   "address": "102nd Street Field House in Riverside Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T15:00:00-04:00",
-   "endTime": "2026-08-01T16:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "3:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/69c6eaaa386a4.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/69c6eaaa386a4.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/summer-on-the-hudson-story-hour/1107216/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "7a185ceb5587",
    "name": "Summer on the Hudson: Story Hour!",
    "description": "Weekly story time for kids featuring rotating books and guest readers. Events take place on Saturdays in May, June, August and September. No events May 16 or September 12.",
@@ -13386,11 +11070,13 @@
    "tags": [],
    "image": "http://www.nycgovparks.org/common_images/events/69c6eaaa386a4.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/69c6eaaa386a4.jpg"
+    "http://www.nycgovparks.org/common_images/events/69c6eaaa386a4.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/69c6eaaa386a4.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-on-the-hudson-story-hour",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -14248,34 +11934,6 @@
    ]
   },
   {
-   "id": "2224041d3993",
-   "name": "Cocktails on the Farm",
-   "description": "Enjoy a relaxed evening at Randall's Island Park with Cocktails on our Urban Farm! Sip on farm-fresh cocktails (21+) or complimentary mocktails, while enjoying plant-based bites, crafts, and activities. Afterwards, join us for Movie Night! Bring a blanket and settle in under the stars for an…",
-   "venue": "Urban Farm",
-   "address": "Urban Farm in Randall's Island Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T17:00:00-04:00",
-   "endTime": "2026-08-01T20:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "5:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3d9f0c2f737.JPG",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3d9f0c2f737.JPG"
-   ],
-   "url": "https://www1.nyc.gov/events/cocktails-on-the-farm/1058876/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "b3737f2263e5",
    "name": "Cocktails on the Farm",
    "description": "Enjoy a relaxed evening at Randall’s Island Park with Cocktails on our Urban Farm! Sip on farm-fresh cocktails (21+) or complimentary mocktails, while enjoying plant-based bites, crafts, and activities.Afterwards, join us for Movie Night! Bring a blanket and settle in under the stars for an outdoor…",
@@ -14300,11 +11958,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a3d9f0c2f737.JPG",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a3d9f0c2f737.JPG"
+    "http://www.nycgovparks.org/common_images/events/6a3d9f0c2f737.JPG",
+    "https://www.nycgovparks.org/common_images/events/full/6a3d9f0c2f737.JPG"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/cocktails-on-the-farm",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -16462,34 +14122,6 @@
    ]
   },
   {
-   "id": "63c1e97aabfd",
-   "name": "Summer on the Hudson: Silent Disco",
-   "description": "Grab headphones and party on the Pier at this Quiet Clubbing event featuring three live DJs playing different genres. Arrive early! Line opens at 5:30pm. Headphone supplies are limited and there may be a wait. Rain date September 19.",
-   "venue": "Pier I",
-   "address": "Pier I in Riverside Park South",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T18:00:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "6:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/69bd5dd6754b5.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/69bd5dd6754b5.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/summer-on-the-hudson-silent-disco/1107176/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "f470a1834e5c",
    "name": "Summer on the Hudson: Silent Disco",
    "description": "Grab headphones and party on the Pier at this Quiet Clubbing event featuring three live DJs playing different genres. Arrive early! Line opens at 5:30pm. Headphone supplies are limited and there may be a wait. Rain date September 19.",
@@ -16511,11 +14143,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/69bd5dd6754b5.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/69bd5dd6754b5.jpg"
+    "http://www.nycgovparks.org/common_images/events/69bd5dd6754b5.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/69bd5dd6754b5.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/summer-on-the-hudson-silent-disco",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -16880,32 +14514,6 @@
    ]
   },
   {
-   "id": "934b536da54d",
-   "name": "Hudson Classical Theater Company presents: The Dancing Men",
-   "description": "The Hudson Classical Theater Company Presents The Dancing Men: A Sherlock Holmes Mystery written by Susane Lee, adapted from the short story by Sir Arthur Conan Doyle, and directed by Susane Lee and Nicholas Martin-Smith. Hilton Cubitt seeks the help of Sherlock Holmes when he comes across a series…",
-   "venue": "Soldiers' and Sailors' Monument",
-   "address": "Soldiers' and Sailors' Monument in Riverside Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T18:30:00-04:00",
-   "endTime": "2026-08-01T20:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "6:30 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": null,
-   "images": [],
-   "url": "https://www1.nyc.gov/events/hudson-classical-theater-company-presents-the-dancing-men/1050216/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "41435046fa8b",
    "name": "Hudson Classical Theater Company presents: The Dancing Men",
    "description": "The Hudson Classical Theater Company Presents The Dancing Men: A Sherlock Holmes Mystery written by Susane Lee, adapted from the short story by Sir Arthur Conan Doyle, and directed by Susane Lee and Nicholas Martin-Smith.Hilton Cubitt seeks the help of Sherlock Holmes when he comes across a series…",
@@ -16930,6 +14538,7 @@
    "url": "https://www.nycgovparks.org/events/2026/08/01/hudson-classical-theater-company-presents-the-dancing-men1",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -18171,34 +15780,6 @@
    ]
   },
   {
-   "id": "9255464c0abe",
-   "name": "RTA Summer Sunset Concert Series featuring The Brooklyners",
-   "description": "Waterfront sunset concerts sponsored by the Riverside Tennis Association . No performance on July 4th. June 20 - Ron McClure & Friends June 27 - Morrisania Band Project July 11 - The Afro-Latineers July 18 - The Slim Kings July 25 - Richard Baratta August 1 - The Brooklyners August 8 - Durieux The…",
-   "venue": "96th Street Tennis Courts",
-   "address": "96th Street Tennis Courts in Riverside Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T19:00:00-04:00",
-   "endTime": "2026-08-01T20:30:00-04:00",
-   "hasTime": true,
-   "displayTime": "7:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a15df511c3fd.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a15df511c3fd.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/rta-summer-sunset-concert-series-featuring-the-brooklyners/1094756/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "be95a2a3fcf1",
    "name": "RTA Summer Sunset Concert Series featuring The Brooklyners",
    "description": "Waterfront sunset concerts sponsored by the Riverside Tennis Association. No performance on July 4th. June 20 - Ron McClure & Friends June 27 - Morrisania Band Project July 11 - The Afro-LatineersJuly 18 - The Slim Kings July 25 - Richard Baratta August 1 - The BrooklynersAugust 8 - DurieuxThe…",
@@ -18221,11 +15802,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/67e1b6aee2ac4.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/67e1b6aee2ac4.jpg"
+    "http://www.nycgovparks.org/common_images/events/67e1b6aee2ac4.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a15df511c3fd.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/rta-summer-sunset-concert-series",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -18574,37 +16157,6 @@
     "https://s1.ticketm.net/dam/a/650/bf4f4e8b-b847-41b3-82ac-b826aad3c650_ARTIST_PAGE_3_2.jpg"
    ],
    "url": "https://www.ticketmaster.com/stranger-things-the-first-shadow-new-york-new-york-08-01-2026/event/Z1r9uZrrZbpZ1Av-6a4",
-   "isPaid": true,
-   "sources": [
-    "Ticketmaster"
-   ]
-  },
-  {
-   "id": "adb35d354f5f",
-   "name": "Stranger Things: The First Shadow",
-   "description": null,
-   "venue": "Marquis Theatre - NY",
-   "address": "211 W 45th St",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": 40.7593,
-   "longitude": -73.990196,
-   "inCityArea": true,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T19:00:00-04:00",
-   "endTime": null,
-   "hasTime": true,
-   "displayTime": "7:00 PM",
-   "category": null,
-   "tags": [],
-   "image": "https://s1.ticketm.net/dam/c/f51/ee785ed6-f806-4195-98f4-69f67e09df51_106201_RETINA_PORTRAIT_3_2.jpg",
-   "images": [
-    "https://s1.ticketm.net/dam/c/f51/ee785ed6-f806-4195-98f4-69f67e09df51_106201_RETINA_PORTRAIT_3_2.jpg",
-    "https://s1.ticketm.net/dam/c/f51/ee785ed6-f806-4195-98f4-69f67e09df51_106201_TABLET_LANDSCAPE_3_2.jpg",
-    "https://s1.ticketm.net/dam/c/f51/ee785ed6-f806-4195-98f4-69f67e09df51_106201_RETINA_LANDSCAPE_16_9.jpg",
-    "https://s1.ticketm.net/dam/c/f51/ee785ed6-f806-4195-98f4-69f67e09df51_106201_TABLET_LANDSCAPE_16_9.jpg"
-   ],
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-eOY",
    "isPaid": true,
    "sources": [
     "Ticketmaster"
@@ -21545,34 +19097,6 @@
    ]
   },
   {
-   "id": "59df54fbb6b5",
-   "name": "Movie Night: Zootopia 2",
-   "description": "Bring a blanket and settle in under the stars for an outdoor movie night in the Park. Enjoy sweeping views of the Hell Gate Bridge and the city skyline while watching Zootopia 2, the perfect pick for a fun summer evening! Location: Field 62 Urban Farm For inquiries about accessibility, to request…",
-   "venue": "Field 62 - 63",
-   "address": "Field 62 - 63 in Randall's Island Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-01T23:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3da01c171a8.JPG",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3da01c171a8.JPG"
-   ],
-   "url": "https://www1.nyc.gov/events/movie-night-zootopia-2/1088416/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "44983cae69e8",
    "name": "Movie Night: Zootopia 2",
    "description": "Bring a blanket and settle in under the stars for an outdoor movie night in the Park. Enjoy sweeping views of the Hell Gate Bridge and the city skyline while watching Zootopia 2, the perfect pick for a fun summer evening! Location: Field 62 Urban Farm For inquiries about accessibility, to request…",
@@ -21598,11 +19122,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a3da01c171a8.JPG",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a3da01c171a8.JPG"
+    "http://www.nycgovparks.org/common_images/events/6a3da01c171a8.JPG",
+    "https://www.nycgovparks.org/common_images/events/full/6a3da01c171a8.JPG"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/movie-night-zootopia-2",
    "isPaid": null,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -21872,47 +19398,11 @@
    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187771435%2F136677757648%2F1%2Foriginal.20240309-101944?h=200&w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C2%2C1200%2C600&s=92afa9e64042a6fcae8af3ca2ab010fa",
    "images": [
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187771435%2F136677757648%2F1%2Foriginal.20240309-101944?h=200&w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C2%2C1200%2C600&s=92afa9e64042a6fcae8af3ca2ab010fa",
-    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187771435%2F136677757648%2F1%2Foriginal.20240309-101944?auto=format%2Ccompress&q=75&sharp=10&s=3a8ff0927fdefefc9736eff17ad9c072"
-   ],
-   "url": "https://www.eventbrite.com/e/rb-saturdays-the-sexiest-rb-party-in-queens-tickets-1992701624200",
-   "isPaid": true,
-   "sources": [
-    "Eventbrite"
-   ]
-  },
-  {
-   "id": "1703a03df4a5",
-   "name": "R&B Saturdays (The Sexiest R&B Party in Queens )",
-   "description": "The Sexist Hiphop Dance Party!",
-   "venue": "Kiss Lounge",
-   "address": "130-35 91st Avenue, Queens, NY 11418",
-   "city": "New York",
-   "venueArea": "Queens",
-   "latitude": 40.69874099999999,
-   "longitude": -73.8192305,
-   "inCityArea": true,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-02T04:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "R&B",
-   "tags": [
-    "Music",
-    "Party or Social Gathering",
-    "Party",
-    "Hiphop",
-    "Drink",
-    "Nyc",
-    "Reggaeton",
-    "Rnb"
-   ],
-   "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F779778909%2F270744927209%2F1%2Foriginal.20240530-185348?h=200&auto=format%2Ccompress&q=75&sharp=10&s=c8ec3f8e8301dad82234c8988ecf1122",
-   "images": [
+    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187771435%2F136677757648%2F1%2Foriginal.20240309-101944?auto=format%2Ccompress&q=75&sharp=10&s=3a8ff0927fdefefc9736eff17ad9c072",
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F779778909%2F270744927209%2F1%2Foriginal.20240530-185348?h=200&auto=format%2Ccompress&q=75&sharp=10&s=c8ec3f8e8301dad82234c8988ecf1122",
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F779778909%2F270744927209%2F1%2Foriginal.20240530-185348?auto=format%2Ccompress&q=75&sharp=10&s=04a1e1429add26e56edbfc14cfe65c46"
    ],
-   "url": "https://www.eventbrite.com/e/rb-saturdays-the-sexiest-rb-party-in-queens-tickets-1992176110374",
+   "url": "https://www.eventbrite.com/e/rb-saturdays-the-sexiest-rb-party-in-queens-tickets-1992701624200",
    "isPaid": true,
    "sources": [
     "Eventbrite"
@@ -22477,146 +19967,6 @@
    ]
   },
   {
-   "id": "65d186bff265",
-   "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-   "description": "Wheel Fun Rentals at Boathouse Row is lighting up summer nights in patriotic style as it celebrates America's 250th anniversary with special Red, White & Blue LED Illuminated Surrey Night Rides. Patriotic Surrey Nights Rides are available now and will run through Labor Day Weekend at their…",
-   "venue": "Marine Park",
-   "address": "Marine Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/wheel-fun-rentals-celebrates-americas-250th-with-patriotic-led-bike-ride/1113636/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "22cf7b74cf2c",
-   "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-   "description": "Wheel Fun Rentals at Boathouse Row is lighting up summer nights in patriotic style as it celebrates America's 250th anniversary with special Red, White & Blue LED Illuminated Surrey Night Rides. Patriotic Surrey Nights Rides are available now and will run through Labor Day Weekend at their…",
-   "venue": "Meadow Lake North",
-   "address": "Meadow Lake North in Flushing Meadows Corona Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/wheel-fun-rentals-celebrates-americas-250th-with-patriotic-led-bike-ride/1113596/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "822b4880d3c4",
-   "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-   "description": "Wheel Fun Rentals at Boathouse Row is lighting up summer nights in patriotic style as it celebrates America's 250th anniversary with special Red, White & Blue LED Illuminated Surrey Night Rides. Patriotic Surrey Nights Rides are available now and will run through Labor Day Weekend at their…",
-   "venue": "Bensonhurst Park",
-   "address": "Bensonhurst Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/wheel-fun-rentals-celebrates-americas-250th-with-patriotic-led-bike-ride/1113656/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "f6d93a22b816",
-   "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-   "description": "Wheel Fun Rentals at Boathouse Row is lighting up summer nights in patriotic style as it celebrates America's 250th anniversary with special Red, White & Blue LED Illuminated Surrey Night Rides. Patriotic Surrey Nights Rides are available now and will run through Labor Day Weekend at their…",
-   "venue": "Sand Lane and Father Capadanno Boulevard",
-   "address": "Sand Lane and Father Capadanno Boulevard in Franklin D. Roosevelt Boardwalk and Beach",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/wheel-fun-rentals-celebrates-americas-250th-with-patriotic-led-bike-ride/1113616/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
-   "id": "83eca91ab9d0",
-   "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-   "description": "Wheel Fun Rentals at Boathouse Row is lighting up summer nights in patriotic style as it celebrates America's 250th anniversary with special Red, White & Blue LED Illuminated Surrey Night Rides. Patriotic Surrey Nights Rides are available now and will run through Labor Day Weekend at their…",
-   "venue": "David Dinkins Circle",
-   "address": "David Dinkins Circle in Flushing Meadows Corona Park",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:00:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:00 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/wheel-fun-rentals-celebrates-americas-250th-with-patriotic-led-bike-ride/1113676/1",
-   "isPaid": null,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "3055c9d92083",
    "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
    "description": "Wheel Fun Rentals at Boathouse Row is lighting up summer nights in patriotic style as it celebrates America's 250th anniversary with special Red, White & Blue LED Illuminated Surrey Night Rides. Patriotic Surrey Nights Rides are available now and will run through Labor Day Weekend at their…",
@@ -22638,11 +19988,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a3a8fe10f864.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a3a8fe10f864.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a3a8fe10f864.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a3a8fe10f864.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/wheel-fun-rentals-celebrates-americas-250th-with-patriotic-led-bike-ride",
    "isPaid": true,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -22949,34 +20301,6 @@
    ]
   },
   {
-   "id": "b73d6d50de5e",
-   "name": "Movies Under the Stars: Spy Kids",
-   "description": "Grab a blanket and come enjoy a movie in a neighborhood park or playground! This summer, NYC Parks and The Mayor's Office of Media and Entertainment will host family-friendly movie showings across the five boroughs. The offspring of former secret agents must come to the rescue when their parents…",
-   "venue": "Basketball Court",
-   "address": "Basketball Court in Alexander Hamilton Playground",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": null,
-   "longitude": null,
-   "inCityArea": null,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T20:30:00-04:00",
-   "endTime": "2026-08-01T22:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "8:30 PM",
-   "category": "Parks & Recreation",
-   "tags": [],
-   "image": "https://www.nycgovparks.org/common_images/events/full/6a4852ba4a36e.jpg",
-   "images": [
-    "https://www.nycgovparks.org/common_images/events/full/6a4852ba4a36e.jpg"
-   ],
-   "url": "https://www1.nyc.gov/events/movies-under-the-stars-spy-kids/1089216/1",
-   "isPaid": false,
-   "sources": [
-    "NYC Events Calendar"
-   ]
-  },
-  {
    "id": "c247a77f8257",
    "name": "Movies Under the Stars: Spy Kids",
    "description": "Grab a blanket and come enjoy a movie in a neighborhood park or playground! This summer, NYC Parks and The Mayor’s Office of Media and Entertainment will host family-friendly movie showings across the five boroughs.The offspring of former secret agents must come to the rescue when their parents are…",
@@ -23000,11 +20324,13 @@
    ],
    "image": "http://www.nycgovparks.org/common_images/events/6a4852ba4a36e.jpg",
    "images": [
-    "http://www.nycgovparks.org/common_images/events/6a4852ba4a36e.jpg"
+    "http://www.nycgovparks.org/common_images/events/6a4852ba4a36e.jpg",
+    "https://www.nycgovparks.org/common_images/events/full/6a4852ba4a36e.jpg"
    ],
    "url": "https://www.nycgovparks.org/events/2026/08/01/movies-under-the-stars-spy-kids",
    "isPaid": false,
    "sources": [
+    "NYC Events Calendar",
     "NYC Parks"
    ]
   },
@@ -23629,47 +20955,11 @@
    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171338158%2F190353750759%2F1%2Foriginal.20251119-155104?crop=focalpoint&fit=crop&w=301&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=519349958d68243b3fb7f2d7dfd89917",
    "images": [
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171338158%2F190353750759%2F1%2Foriginal.20251119-155104?crop=focalpoint&fit=crop&w=301&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=519349958d68243b3fb7f2d7dfd89917",
-    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171338158%2F190353750759%2F1%2Foriginal.20251119-155104?auto=format%2Ccompress&q=75&sharp=10&s=f5b7035daf867f9764362e70de7c96da"
-   ],
-   "url": "https://www.eventbrite.com/e/reggaeton-on-ludlow-latin-reggaeton-dance-parrty-at-mehanata-nyc-tickets-1977401922380",
-   "isPaid": true,
-   "sources": [
-    "Eventbrite"
-   ]
-  },
-  {
-   "id": "9b7890a54293",
-   "name": "Reggaeton on Ludlow - Latin & Reggaeton Dance Parrty at Mehanata NYC",
-   "description": "Weekly Event Series in Lower East Side, NYC.",
-   "venue": "Mehanata",
-   "address": "113 Ludlow Street, New York City, NY 10002",
-   "city": "New York",
-   "venueArea": "New York City",
-   "latitude": 40.7194831,
-   "longitude": -73.9889142,
-   "inCityArea": true,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T21:00:00-04:00",
-   "endTime": "2026-08-02T04:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "9:00 PM",
-   "category": "Latin",
-   "tags": [
-    "Music",
-    "Party or Social Gathering",
-    "Reggaeton",
-    "music_event",
-    "dance_night",
-    "latin_reggaeton_party",
-    "newsroom_speakeasy",
-    "periodico_de_ayer"
-   ],
-   "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171380905%2F190353750759%2F1%2Foriginal.20251120-001035?w=355&auto=format%2Ccompress&q=75&sharp=10&s=af41cc19e0728b58c929927892b5abd2",
-   "images": [
+    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171338158%2F190353750759%2F1%2Foriginal.20251119-155104?auto=format%2Ccompress&q=75&sharp=10&s=f5b7035daf867f9764362e70de7c96da",
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171380905%2F190353750759%2F1%2Foriginal.20251120-001035?w=355&auto=format%2Ccompress&q=75&sharp=10&s=af41cc19e0728b58c929927892b5abd2",
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1171380905%2F190353750759%2F1%2Foriginal.20251120-001035?auto=format%2Ccompress&q=75&sharp=10&s=725ca3f4b7a32003b0d953f5edfe58d4"
    ],
-   "url": "https://www.eventbrite.com/e/reggaeton-on-ludlow-latin-reggaeton-dance-parrty-at-mehanata-nyc-tickets-1981838046948",
+   "url": "https://www.eventbrite.com/e/reggaeton-on-ludlow-latin-reggaeton-dance-parrty-at-mehanata-nyc-tickets-1977401922380",
    "isPaid": true,
    "sources": [
     "Eventbrite"
@@ -24290,47 +21580,11 @@
    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187375523%2F224446574590%2F1%2Foriginal.20260622-055559?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=22df260cb5c43ae663a03fa623f53b31",
    "images": [
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187375523%2F224446574590%2F1%2Foriginal.20260622-055559?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=22df260cb5c43ae663a03fa623f53b31",
-    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187375523%2F224446574590%2F1%2Foriginal.20260622-055559?auto=format%2Ccompress&q=75&sharp=10&s=ac6e7731c57770989a612149b84a503d"
-   ],
-   "url": "https://www.eventbrite.com/e/afro-fusion-afrobeats-party-at-the-legendary-mehanata-bar-nyc-tickets-1992333916376",
-   "isPaid": true,
-   "sources": [
-    "Eventbrite"
-   ]
-  },
-  {
-   "id": "36d22fad78d1",
-   "name": "AFRO FUSION: Afrobeats Party at the Legendary Mehanata Bar NYC",
-   "description": "The best Saturday night Afrobeats night lands at Mehanata NYC with two floors of music!",
-   "venue": "Mehanata Bulgarian Bar",
-   "address": "113 Ludlow Street, New York, NY 10002",
-   "city": "New York",
-   "venueArea": "New York",
-   "latitude": 40.7194721,
-   "longitude": -73.9888112,
-   "inCityArea": true,
-   "date": "2026-08-01",
-   "startTime": "2026-08-01T22:00:00-04:00",
-   "endTime": "2026-08-02T04:00:00-04:00",
-   "hasTime": true,
-   "displayTime": "10:00 PM",
-   "category": "Top 40",
-   "tags": [
-    "Music",
-    "Party or Social Gathering",
-    "Party",
-    "Nightlife",
-    "Afrobeats",
-    "Afrobeat",
-    "Nightclub",
-    "Thingstodo"
-   ],
-   "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187336343%2F190353750759%2F1%2Foriginal.20260621-013323?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=c4fba81f2460a08595c0f50282cc24ec",
-   "images": [
+    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187375523%2F224446574590%2F1%2Foriginal.20260622-055559?auto=format%2Ccompress&q=75&sharp=10&s=ac6e7731c57770989a612149b84a503d",
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187336343%2F190353750759%2F1%2Foriginal.20260621-013323?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=c4fba81f2460a08595c0f50282cc24ec",
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1187336343%2F190353750759%2F1%2Foriginal.20260621-013323?auto=format%2Ccompress&q=75&sharp=10&s=433f75acd890e7448fb4e12a48adc3e6"
    ],
-   "url": "https://www.eventbrite.com/e/afro-fusion-afrobeats-party-at-the-legendary-mehanata-bar-nyc-tickets-1992299916682",
+   "url": "https://www.eventbrite.com/e/afro-fusion-afrobeats-party-at-the-legendary-mehanata-bar-nyc-tickets-1992333916376",
    "isPaid": true,
    "sources": [
     "Eventbrite"
