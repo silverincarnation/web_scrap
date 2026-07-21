@@ -32,7 +32,31 @@ def get(d, *keys, default=""):
     return d if d is not None else default
 
 
-def build_params(config, page):
+# The Discovery API's free-text `city` filter is unreliable for non-US metros
+# (Ticketmaster stores Mexican cities in Spanish / by borough), so for known
+# cities we search by geo radius instead. "lat,long" per Discovery's `latlong`.
+CITY_LATLONG = {
+    "mexico city": "19.4326,-99.1332", "cdmx": "19.4326,-99.1332",
+    "ciudad de mexico": "19.4326,-99.1332", "ciudad de méxico": "19.4326,-99.1332",
+}
+
+# Country -> timezone, so the local-date filter matches the venue's day (an
+# evening CDMX show in UTC must not be bucketed into the next NY day).
+COUNTRY_TZ = {
+    "MX": "America/Mexico_City", "US": "America/New_York",
+    "CA": "America/Toronto", "GB": "Europe/London", "ES": "Europe/Madrid",
+    "AR": "America/Argentina/Buenos_Aires",
+}
+
+
+def _latlong(config):
+    v = str(config.get("latlong") or "").strip()
+    if v:
+        return v
+    return CITY_LATLONG.get((config.get("city") or "").strip().lower())
+
+
+def build_params(config, page, extra=None):
     params = {
         "apikey": config["apikey"],
         "size": config.get("size", 100),
@@ -41,13 +65,15 @@ def build_params(config, page):
     mapping = {
         "start_time": "startDateTime",
         "end_time": "endDateTime",
-        "city": "city",
         "country_code": "countryCode",
         "keyword": "keyword",
     }
     for key, api_name in mapping.items():
         if config.get(key):
             params[api_name] = config[key]
+    for k, v in (extra or {}).items():
+        if v not in (None, ""):
+            params[k] = v
     return params
 
 
@@ -65,17 +91,17 @@ def fetch_json(url):
     return {}
 
 
-def fetch_events(config):
+def _fetch_pages(config, extra):
     events = []
     size = config.get("size", 100)
-    page_cap = 1000 // size
+    page_cap = max(1, 1000 // size)
     max_pages = config.get("max_pages") or 10**9
     max_pages = min(max_pages, page_cap)
 
     page = 0
     data = {}
     while page < max_pages:
-        url = API_URL + "?" + urllib.parse.urlencode(build_params(config, page))
+        url = API_URL + "?" + urllib.parse.urlencode(build_params(config, page, extra))
         data = fetch_json(url)
         time.sleep(0.25)
         batch = get(data, "_embedded", "events", default=[])
@@ -88,8 +114,30 @@ def fetch_events(config):
 
     total = get(data, "page", "totalElements", default=len(events))
     if total > 1000:
-        print("API can only catch 1000 events")
+        print("  ticketmaster: API caps at 1000 results; narrow the date range.")
     return events
+
+
+def fetch_events(config):
+    """Try geo radius, then the city string, then country-wide -- return the
+    first attempt that yields events. Each attempt is logged, so 0 rows is
+    always explainable (empty API result vs. filtered out later)."""
+    strategies = []
+    ll = _latlong(config)
+    if ll:
+        strategies.append(("geo radius " + ll,
+                           {"latlong": ll, "radius": config.get("radius", 100),
+                            "unit": config.get("unit", "km")}))
+    if config.get("city"):
+        strategies.append(("city=%s" % config["city"], {"city": config["city"]}))
+    strategies.append(("countryCode only", {}))
+
+    for label, extra in strategies:
+        events = _fetch_pages(config, extra)
+        print(f"  ticketmaster: {len(events)} events via {label}")
+        if events:
+            return events
+    return []
 
 
 def map_event(event):
@@ -184,8 +232,12 @@ def download(config):
     print("pull events..")
     events = fetch_events(config)
     rows = [map_event(e) for e in events]
+    tz = COUNTRY_TZ.get((config.get("country_code") or "").strip().upper(),
+                        "America/New_York")
     rows = keep_on_dates(rows, config.get("start_date"), config.get("end_date"),
-                         config.get("city", ""))
+                         config.get("city", ""), tz_name=tz)
+    print(f"  ticketmaster: {len(events)} from API -> {len(rows)} rows after "
+          f"date filter (tz {tz})")
     out = config.get("out", "events.csv")
     with open(out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=COLUMNS)

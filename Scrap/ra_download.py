@@ -30,6 +30,9 @@ AREA_IDS = {
     "new york": 8, "nyc": 8, "london": 13, "berlin": 34, "amsterdam": 26,
     "paris": 44, "los angeles": 23, "san francisco": 20, "chicago": 5,
     "miami": 16, "barcelona": 28, "tokyo": 27, "sydney": 2, "toronto": 21,
+    # Mexico City (verified against ra.co/graphql: area 399 -> "Mexico City").
+    "mexico city": 399, "cdmx": 399, "ciudad de mexico": 399,
+    "ciudad de méxico": 399, "mexico city, mx": 399,
 }
 
 HEADERS = {

@@ -1,9 +1,15 @@
 """eventbrite.com scraper -- self-contained, no API key.
 
-Reads schema.org Event JSON-LD from Eventbrite's server-rendered search pages.
-Same structure as the standalone repo version, plus a date-window filter so the
-output only contains events on the requested day(s) (de-duplicated, with the
-run's city backfilled). Stdlib + BeautifulSoup only.
+Eventbrite's server-rendered search pages used to embed schema.org Event
+JSON-LD; they removed that sitewide, so this reads the events out of the
+``window.__SERVER_DATA__`` blob that every search page still ships in its raw
+HTML (``search_data.events.results``). Stdlib only -- no BeautifulSoup.
+
+URL:   https://www.eventbrite.com/d/{place}/{slug}/?page=N&start_date=...&...
+Place: "{country_code}--{city}" (e.g. mx--mexico-city); Eventbrite redirects it
+to its canonical form (mexico--mexico-city) and urllib follows the redirect.
+
+Same date-window filter / de-dupe / city back-fill as the other scrapers.
 """
 
 import csv
@@ -11,11 +17,9 @@ import datetime
 import json
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
-import urllib.error
-
-from bs4 import BeautifulSoup
 
 SEARCH_URL = "https://www.eventbrite.com/d/{place}/{slug}/"
 
@@ -30,8 +34,11 @@ HEADERS = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
     ),
-    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml",
+    "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
 }
+
+_SD_MARKER = "window.__SERVER_DATA__"
 
 
 def get(d, *keys, default=""):
@@ -97,96 +104,115 @@ def fetch_html(url, retries=6):
     return ""
 
 
+def extract_server_data(html):
+    """Pull the JSON assigned to ``window.__SERVER_DATA__`` out of the raw HTML.
+
+    Scans from the marker's first ``{`` and brace-matches (string-aware) to the
+    matching ``}`` so nested objects don't trip us up. Returns a dict or None.
+    """
+    i = html.find(_SD_MARKER)
+    if i < 0:
+        return None
+    i = html.find("{", i)
+    if i < 0:
+        return None
+    depth = 0
+    in_str = False
+    esc = False
+    start = i
+    for j in range(i, len(html)):
+        c = html[j]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+        else:
+            if c == '"':
+                in_str = True
+            elif c == "{":
+                depth += 1
+            elif c == "}":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        return json.loads(html[start:j + 1])
+                    except ValueError:
+                        return None
+    return None
+
+
 def extract_events_from_html(html):
-    soup = BeautifulSoup(html, "html.parser")
-    events = []
-    for tag in soup.find_all("script", attrs={"type": "application/ld+json"}):
-        raw = tag.string or tag.get_text() or ""
-        raw = raw.strip()
-        if not raw:
-            continue
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            continue
-
-        candidates = data if isinstance(data, list) else [data]
-        for obj in candidates:
-            if not isinstance(obj, dict):
-                continue
-            t = obj.get("@type", "")
-            if t == "ItemList":
-                for el in obj.get("itemListElement", []):
-                    item = el.get("item", el) if isinstance(el, dict) else {}
-                    if isinstance(item, dict) and "Event" in str(item.get("@type", "")):
-                        events.append(item)
-            elif "Event" in str(t):
-                events.append(obj)
-    return events
+    data = extract_server_data(html)
+    if not data:
+        return []
+    results = get(data, "search_data", "events", "results", default=[])
+    return results if isinstance(results, list) else []
 
 
-def _join_address(address):
-    if isinstance(address, str):
-        return address, "", ""
-    line = get(address, "streetAddress")
-    city = get(address, "addressLocality")
-    return line, city, address
+def _text(value):
+    if isinstance(value, dict):
+        return value.get("text") or value.get("html") or ""
+    return value or ""
 
 
-def _to_utc(dt):
-    if not dt:
+def _combine(date, tm):
+    date = str(date or "").strip()
+    tm = str(tm or "").strip()
+    if not date:
         return ""
-    if dt.endswith("Z"):
-        return dt
-    m = re.match(r"(.*T\d{2}:\d{2}:\d{2})([+-]\d{2}:\d{2})$", dt)
-    if m and m.group(2) == "+00:00":
-        return m.group(1) + "Z"
-    return dt
+    if re.fullmatch(r"\d{2}:\d{2}", tm):
+        return f"{date}T{tm}:00"
+    return date
 
 
 def map_event(event):
-    location = event.get("location") or {}
-    if isinstance(location, list):
-        location = location[0] if location else {}
+    venue = event.get("primary_venue") or {}
+    addr = venue.get("address") or {}
+    if not isinstance(addr, dict):
+        addr = {}
 
-    line, city, _ = _join_address(location.get("address", {}))
-    geo = location.get("geo", {}) or {}
+    image = event.get("image") or {}
+    if isinstance(image, dict):
+        img_url = image.get("url", "")
+    elif isinstance(image, str):
+        img_url = image
+    else:
+        img_url = ""
 
-    image = event.get("image", "")
-    if isinstance(image, list):
-        image = image[0] if image else ""
-    elif isinstance(image, dict):
-        image = image.get("url", "")
+    tags = event.get("tags") or []
+    tag_names = []
+    for t in tags:
+        if isinstance(t, dict):
+            name = t.get("display_name") or t.get("name") or _text(t.get("text"))
+            if name:
+                tag_names.append(str(name))
 
-    offers = event.get("offers", {})
-    if isinstance(offers, list):
-        offers = offers[0] if offers else {}
-    price = None
-    if isinstance(offers, dict):
-        if "price" in offers:
-            price = offers["price"]
-        elif "lowPrice" in offers:
-            price = offers["lowPrice"]
-    is_paid = ""
-    if price is not None and str(price).strip() != "":
-        try:
-            is_paid = "true" if float(price) > 0 else "false"
-        except (TypeError, ValueError):
-            is_paid = ""
+    is_free = event.get("is_free")
+    if is_free is None:
+        is_paid = ""
+    else:
+        is_paid = "false" if is_free else "true"
+
+    address = (addr.get("localized_address_display")
+               or ", ".join([p for p in (addr.get("address_1"), addr.get("city"))
+                             if p]))
 
     return {
-        "name": event.get("name", ""),
-        "description": (event.get("description", "") or "").strip(),
-        "location_name": location.get("name", "") if isinstance(location, dict) else "",
-        "latitude": get(geo, "latitude"),
-        "longitude": get(geo, "longitude"),
-        "address": line,
-        "start_time": _to_utc(event.get("startDate", "")),
-        "end_time": _to_utc(event.get("endDate", "")),
-        "city": (city or "").lower(),
-        "primary_category": event.get("@type", "") if event.get("@type") != "Event" else "",
-        "secondary_categories": "",
-        "thumbnail_image": image,
+        "name": _text(event.get("name")),
+        "description": _text(event.get("summary") or event.get("full_description")),
+        "location_name": venue.get("name", "") if isinstance(venue, dict) else "",
+        "latitude": str(addr.get("latitude") or ""),
+        "longitude": str(addr.get("longitude") or ""),
+        "address": address or "",
+        "start_time": _combine(event.get("start_date"), event.get("start_time")),
+        "end_time": _combine(event.get("end_date"), event.get("end_time")),
+        "city": str(addr.get("city") or "").lower(),
+        "primary_category": tag_names[0] if tag_names else "",
+        "secondary_categories": ",".join(tag_names[1:]),
+        "thumbnail_image": img_url,
         "additional_images": "",
         "external_link": event.get("url", ""),
         "is_paid": is_paid,
@@ -194,38 +220,43 @@ def map_event(event):
 
 
 def fetch_events(config):
-    events = []
-    seen = set()
+    events, seen = [], set()
     max_pages = config.get("max_pages") or 50
-    delay = config.get("delay", 2.0)
+    delay = config.get("delay", 1.5)
+    total_pages = None
     for page in range(1, max_pages + 1):
         url = build_url(config, page)
         try:
             html = fetch_html(url)
         except urllib.error.HTTPError as e:
-            print(f"  stopped at page {page}: HTTP {e.code}, keeping {len(events)} events so far")
+            print(f"  stopped at page {page}: HTTP {e.code}, "
+                  f"keeping {len(events)} events so far")
             break
-        time.sleep(delay)
-        batch = extract_events_from_html(html)
+        data = extract_server_data(html)
+        batch = get(data, "search_data", "events", "results", default=[]) if data else []
+        if total_pages is None:
+            total_pages = (data or {}).get("page_count") or 1
         new = 0
-        for ev in batch:
-            key = ev.get("url") or ev.get("name")
+        for ev in (batch or []):
+            key = ev.get("url") or ev.get("id") or ev.get("name")
             if key and key in seen:
                 continue
             seen.add(key)
             events.append(ev)
             new += 1
-        print(f"  page {page}: {len(batch)} found, {new} new (total {len(events)})")
-        if new == 0:
+        print(f"  page {page}/{total_pages}: {len(batch or [])} found, "
+              f"{new} new (total {len(events)})")
+        time.sleep(delay)
+        if new == 0 or page >= (total_pages or 1):
             break
     return events
 
 
 # --------------------------------------------------------------------------- #
-# Date-window filter + de-dupe + city back-fill (the "current" functionality)
+# Date-window filter + de-dupe + city back-fill (shared with the other scrapers)
 # --------------------------------------------------------------------------- #
 def keep_on_dates(rows, start_date=None, end_date=None, city="",
-                  tz_name="America/New_York"):
+                  tz_name="America/Mexico_City"):
     def zone():
         try:
             from zoneinfo import ZoneInfo

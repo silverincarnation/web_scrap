@@ -6,6 +6,10 @@ Finds the sibling ``Scrap/`` folder, lists every ``Scrap/<site>_download.py``,
 runs the selected ones for a city + date(s), and saves one CSV per site/day to
 ``result/<Location>/<YYYY-MM-DD>/<site>.csv``.
 
+Runs day by day: every selected site finishes for one day before the next day.
+On a network timeout the site/day is retried after a wait; if a site simply has
+no data for a day it is skipped and no CSV is written.
+
 API keys (e.g. Ticketmaster) are read from the environment / a local ``.env``
 as ``<SITE>_API_KEY`` (e.g. ``TICKETMASTER_API_KEY``).
 
@@ -16,14 +20,22 @@ import datetime
 import importlib.util
 import os
 import re
+import socket
 import subprocess
 import sys
+import time
 
 import streamlit as st
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 RESULT_DIR = os.path.join(ROOT, "result")
 SUFFIX = "_download.py"
+
+# Runs day by day: every selected site finishes for one day before the next day.
+# On a network timeout we wait and retry; if a site simply has no data for a
+# day (0 rows), no CSV is written for it.
+MAX_ATTEMPTS = 4        # 1 initial try + up to 3 retries, timeouts only
+RETRY_WAIT_SEC = 20     # base seconds between timeout retries (scaled by attempt)
 
 # North American time zones offered in the UI dropdown.
 NA_TIMEZONES = [
@@ -94,6 +106,15 @@ def load_download(path):
     return mod.download
 
 
+def _is_timeout(err):
+    """True if the error looks like a network timeout (worth waiting + retrying)."""
+    if isinstance(err, (TimeoutError, socket.timeout)):
+        return True
+    if isinstance(getattr(err, "reason", None), (TimeoutError, socket.timeout)):
+        return True
+    return "timed out" in str(err).lower() or "timeout" in str(err).lower()
+
+
 def location_folder(city, country):
     """'New York','US' -> 'New_York_US'."""
     part = re.sub(r"[^A-Za-z0-9]+", "_", city.strip()).strip("_") or "Location"
@@ -146,11 +167,13 @@ if not scrapers:
 
 with st.form("scrape"):
     sites = st.multiselect("Websites", list(scrapers),
-                           default=[s for s in ("eventbrite",) if s in scrapers])
+                           default=[s for s in ("ra", "songkick", "eventbrite",
+                                                "ticketmaster") if s in scrapers])
     c1, c2, c3 = st.columns(3)
-    city = c1.text_input("Location (city)", "New York")
-    country = c2.text_input("Country code", "US", max_chars=2)
+    city = c1.text_input("Location (city)", "Mexico City")
+    country = c2.text_input("Country code", "MX", max_chars=2)
     tz_name = c3.selectbox("Time zone", NA_TIMEZONES,
+                           index=NA_TIMEZONES.index("America/Mexico_City"),
                            format_func=lambda z: NA_TZ_LABELS.get(z, z))
     today = datetime.date.today()
     picked = st.date_input("Date (or range)", (today, today))
@@ -174,29 +197,57 @@ if go:
     st.info(f"Scraping {len(sites)} site(s) x {len(dates)} day(s) = {total} file(s)")
 
     bar = st.progress(0.0)
+    status_area = st.empty()
     results = []
     done = 0
+    # Day by day: finish every selected site for one day before the next day.
     for date in dates:
         out_dir = os.path.join(base, date)
         os.makedirs(out_dir, exist_ok=True)
         for site in sites:
             done += 1
             out = os.path.join(out_dir, f"{site}.csv")
-            try:
-                rows = load_download(scrapers[site])(
-                    build_config(site, city, country, date, out, tz_name))
-                results.append({"Site": site, "Date": date,
-                                "Rows": len(rows or []), "Status": "ok",
-                                "File": os.path.relpath(out, ROOT)})
-            except Exception as e:
-                results.append({"Site": site, "Date": date, "Rows": 0,
-                                "Status": f"{type(e).__name__}: {e}",
-                                "File": os.path.relpath(out, ROOT)})
+            rows, status = None, None
+
+            for attempt in range(1, MAX_ATTEMPTS + 1):
+                try:
+                    status_area.write(
+                        f"⏳ {date} · **{site}** (attempt {attempt}/{MAX_ATTEMPTS})")
+                    rows = load_download(scrapers[site])(
+                        build_config(site, city, country, date, out, tz_name))
+                    status = "ok"
+                    break
+                except Exception as e:
+                    # Timeout -> wait and retry. Any other error -> stop, record it.
+                    if _is_timeout(e) and attempt < MAX_ATTEMPTS:
+                        wait = RETRY_WAIT_SEC * attempt
+                        status_area.warning(
+                            f"⏱️ {date} · {site} timed out — waiting {wait}s, "
+                            f"then retry {attempt + 1}/{MAX_ATTEMPTS}…")
+                        time.sleep(wait)
+                        continue
+                    status = ("TimeoutError: gave up after retries"
+                              if _is_timeout(e) else f"{type(e).__name__}: {e}")
+                    break
+
+            n = len(rows or [])
+            # No data for this site/day -> don't leave a (header-only) CSV behind.
+            if n == 0 and os.path.exists(out):
+                try:
+                    os.remove(out)
+                except OSError:
+                    pass
+
+            results.append({
+                "Site": site, "Date": date, "Rows": n, "Status": status,
+                "File": os.path.relpath(out, ROOT) if n else "— (no data, skipped)",
+            })
             bar.progress(done / total)
+    status_area.empty()
 
     ok = sum(1 for r in results if r["Status"] == "ok")
     total_rows = sum(r["Rows"] for r in results)
     (st.success if ok == total else st.warning)(
-        f"Done — {ok}/{total} files, {total_rows} rows total.")
+        f"Done — {ok}/{total} tasks ok, {total_rows} rows total.")
     st.dataframe(results, use_container_width=True, hide_index=True)
     st.caption(f"Saved under: {base}")
