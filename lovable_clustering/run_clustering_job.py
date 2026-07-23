@@ -13,7 +13,7 @@ SUPABASE_SERVICE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]  # never expose t
 supabase = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 def load_events():
-    resp = supabase.table("events").select("*").execute()
+    resp = supabase.table("events_host1").select("*").execute()
     return pd.DataFrame(resp.data)
 
 def run():
